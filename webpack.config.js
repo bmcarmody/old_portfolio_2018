@@ -6,10 +6,10 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 module.exports = (env, argv) => {
     const devMode = argv.mode !== 'production';
     return {
-        entry: ['babel-polyfill','./src/js/app.js'],
+        entry: ['babel-polyfill','./src/js/main.js'],
         output: {
             path: path.resolve(__dirname, 'dist'),
-            filename: 'js/app.bundle.js',
+            filename: 'js/main.bundle.js',
         },
         devServer: {
             contentBase: './dist',
@@ -40,7 +40,7 @@ module.exports = (env, argv) => {
             new MiniCssExtractPlugin({
                 // Options similar to the same options in webpackOptions.output
                 // both options are optional
-                filename: 'app.css'
+                filename: 'main.css'
             })
         ] 
     }

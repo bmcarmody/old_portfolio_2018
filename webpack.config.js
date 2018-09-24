@@ -35,7 +35,7 @@ module.exports = (env, argv) => {
         plugins: [
             new HtmlWebpackPlugin({
                 filename: 'index.html',
-                template: './src/index.html'
+                template: '/src/index.html'
             }),
             new MiniCssExtractPlugin({
                 // Options similar to the same options in webpackOptions.output

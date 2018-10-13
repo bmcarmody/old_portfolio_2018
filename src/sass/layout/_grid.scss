@@ -1,0 +1,16 @@
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    &__picture {
+        grid-column: 1/3
+    }
+    
+    &__name {
+        grid-column: 1/3;
+    }
+
+    &__title {
+        grid-column: 1/3;
+    }
+}

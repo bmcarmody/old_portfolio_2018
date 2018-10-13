@@ -1,8 +1,15 @@
+//abstracts
 @import "abstracts/variables";
 
-@import "base/base";
+//base
+@import "base/reset";
 @import "base/typography";
 
+//components
+
+//layout
+@import "layout/header";
 @import "layout/navigation";
 
+//pages
 @import "pages/home";

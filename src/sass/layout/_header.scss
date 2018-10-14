@@ -1,4 +1,12 @@
 .header {
     background: url('../../pattern.png') repeat-x;
-    height: 25rem;
+    height: $header-height;
+    color: $color-white;
+
+    &__picture {
+        height: $photo-dimension;
+        width: $photo-dimension;
+        border-radius: 50%;
+        object-fit: cover;
+    }
 }

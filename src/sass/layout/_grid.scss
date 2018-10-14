@@ -13,3 +13,26 @@
         margin: auto;
     }
 }
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: "g-border-left nav g-border-right"; 
+
+    .g-border {
+        &-left {
+            border-bottom: 1px solid #eee;
+            grid-area: g-border-left;
+        }
+
+        &-right {
+            border-bottom: 1px solid #eee;
+            grid-area: g-border-right;
+        }
+    }
+    
+    .nav {
+        grid-area: nav;
+        display: flex;
+    }
+}

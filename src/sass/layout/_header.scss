@@ -1,3 +1,16 @@
-header {
+.header {
     background: url('../../pattern.png') repeat-x;
+    display: grid;
+    
+    &__picture {
+        margin: auto;
+    }
+    
+    &__name {
+        margin: auto;
+    }
+    
+    &__title {
+        margin: auto;
+    }
 }

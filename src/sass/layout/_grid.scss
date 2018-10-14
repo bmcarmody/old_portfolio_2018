@@ -19,14 +19,14 @@
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-areas: "g-border-left nav g-border-right"; 
 
-    .g-border {
+    .g-border { //There is no class .g-border, it's only for scss grouping
         &-left {
-            border-bottom: 1px solid #eee;
+            border-bottom: 1px solid $color-light-grey;
             grid-area: g-border-left;
         }
 
         &-right {
-            border-bottom: 1px solid #eee;
+            border-bottom: 1px solid $color-light-grey;
             grid-area: g-border-right;
         }
     }

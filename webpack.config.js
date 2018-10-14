@@ -35,6 +35,12 @@ module.exports = (env, argv) => {
                         loader: 'file-loader',
                         options: {}
                     }
+                }, {
+                    test: /\.html$/,
+                    use: {
+                        loader: 'html-loader',
+                        options: {}
+                    }
                 }
             ]
         },

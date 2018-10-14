@@ -1,0 +1,15 @@
+.header {
+    display: grid;
+    
+    &__picture {
+        margin: auto;
+    }
+    
+    &__name {
+        margin: auto;
+    }
+    
+    &__title {
+        margin: auto;
+    }
+}

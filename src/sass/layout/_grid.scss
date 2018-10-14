@@ -17,22 +17,28 @@
 .container {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    grid-template-areas: "g-border-left nav g-border-right"; 
+    grid-template-areas: 
+        "container__border--left nav container__border--right" 
+        ". content ."; 
 
-    .g-border { //There is no class .g-border, it's only for scss grouping
-        &-left {
+    .container__border { //There is no class .g-border, it's only for scss grouping
+        &--left {
             border-bottom: 1px solid $color-light-grey;
-            grid-area: g-border-left;
+            grid-area: container__border--left;
         }
 
-        &-right {
+        &--right {
             border-bottom: 1px solid $color-light-grey;
-            grid-area: g-border-right;
+            grid-area: container__border--right;
         }
     }
     
     .nav {
         grid-area: nav;
         display: flex;
+    }
+
+    .content {
+        grid-area: content;
     }
 }

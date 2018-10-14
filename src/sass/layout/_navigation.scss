@@ -1,14 +1,14 @@
 .nav {
-    font-size: 1.5rem;
-    height: 5rem;
+    font-size: $navigation-font-size;
+    height: $navigation-height;
     border-bottom: 1px solid $color-light-grey;
     
     a {
         margin-top: auto;
-        margin-right: 7rem;
+        margin-right: $navigation-link-rspacing;
         color: $color-dark-grey;
         text-decoration: none;
         border-bottom: 1px solid $color-dark-grey;
-        padding-bottom: 1.2rem;
+        padding-bottom: $navigation-bpadding;
     }
 }

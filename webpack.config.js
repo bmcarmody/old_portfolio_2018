@@ -2,7 +2,6 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
-
 module.exports = (env, argv) => {
     const devMode = argv.mode !== 'production';
     return {
@@ -12,7 +11,8 @@ module.exports = (env, argv) => {
             filename: 'js/main.bundle.js',
         },
         devServer: {
-            contentBase: './dist',
+            contentBase: path.join(__dirname, 'src'),
+            watchContentBase: true
         },
         module: {
             rules: [

@@ -41,4 +41,20 @@
     .content {
         grid-area: content;
     }
+
+    .icon__grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-areas: 
+            "item1 item2 item3 item4 item5"
+            "item6 item7 . . .";
+
+        //Gives each item a grid area and place-self value
+        @for $i from 1 through 7 {
+            &__item--#{$i} {
+                grid-area: item#{$i};
+                place-self: center;
+            }
+        }
+    }
 }

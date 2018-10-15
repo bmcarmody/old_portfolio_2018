@@ -53,7 +53,8 @@
         @for $i from 1 through 7 {
             &__item--#{$i} {
                 grid-area: item#{$i};
-                place-self: center;
+                align-self: center;
+                justify-self: center;
             }
         }
     }

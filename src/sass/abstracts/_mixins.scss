@@ -1,0 +1,12 @@
+@mixin grid__item--center {
+    width: 50%;
+    margin: auto;
+}
+
+@mixin grid__item__background--lgrey {
+    background-color: $color-light-grey2;
+}
+
+@mixin grid__item__background--dgrey {
+    background-color: $color-dark-grey;
+}

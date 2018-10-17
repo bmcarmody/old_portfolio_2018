@@ -17,61 +17,78 @@
     </header>
 
     <div class="container">
-        <div class="container__border--left"><!--Needed for border with grid--></div>
         <nav class="nav">
-            <a href="#">ABOUT</a>
-            <a href="#">SKILLS</a>
-            <a href="#">PROJECTS</a>
-            <a href="#">CONTACT</a>
-        </nav>
-        <div class="container__border--right"><!--Needed for border with grid--></div>
-
-        <main class="content"> 
-            <h1>About Me</h1>
-            
-            <p>
-                I'm a fullstack developer who is passionate about web technologies, both
-                front and backend. I can build complex, intrecate applications using the 
-                best avaliable languages and tools for the job. I'm currently seeking a
-                position where I will be using MEAN or MERN stack to create indepth 
-                applications that will enpower web users. Please check out my portfolio
-                and contact me!
-            </p>
-
-            <h1>My Skills</h1>
-            <div class="icon__grid">
-                <div class="icon icon__grid__item--1">
-                    <i class="devicon-html5-plain colored"></i>
-                    <div class="icon__name">HTML</div>
-                </div>    
-                <div class="icon icon__grid__item--2">
-                    <i class="devicon-css3-plain colored"></i>
-                    <div class="icon__name">CSS</div>
-                </div>
-                <div class="icon icon__grid__item--3">
-                    <i class="devicon-javascript-plain colored"></i>
-                    <div class="icon__name">JAVASCRIPT</div>
-                </div>
-                <div class="icon icon__grid__item--4">
-                    <i class="devicon-nodejs-plain colored"></i>
-                    <div class="icon__name">NODE JS</div>
-                </div>
-                <div class="icon icon__grid__item--5">
-                    <i class="devicon-react-original colored"></i>
-                    <div class="icon__name">REACT</div>
-                </div>
-                <div class="icon icon__grid__item--6">
-                    <i class="devicon-webpack-plain colored"></i>
-                    <div class="icon__name">WEBPACK</div>
-                </div>
-                <div class="icon icon__grid__item--7">
-                    <i class="devicon-sass-original colored"></i>
-                    <div class="icon__name">SASS</div>
-                </div>
+            <div class="nav__content">
+                <a href="#">ABOUT</a>
+                <a href="#">SKILLS</a>
+                <a href="#">PROJECTS</a>
+                <a href="#">CONTACT</a>
             </div>
-            <h1>My Projects</h1>
+        </nav>
 
-            <h1>Contact Me</h1>
+        <main class="main"> 
+            <section class="main__about">
+                <div class="main__about__content">
+                    <h1>About Me</h1>
+                    
+                    <p>
+                        I'm a fullstack developer who is passionate about web technologies, both
+                        front and backend. I can build complex, intrecate applications using the 
+                        best avaliable languages and tools for the job. I'm currently seeking a
+                        position where I will be using MEAN or MERN stack to create indepth 
+                        applications that will enpower web users. Please check out my portfolio
+                        and contact me!
+                    </p>
+                </div> <!--main__about__content-->
+            </section> <!--main__about-->
+
+            <section class="main__skills">
+                <div class="main__skills__content">
+                    <h1>My Skills</h1>
+                    <div class="icon__grid">
+                        <div class="icon icon__grid__item--1">
+                            <i class="devicon-html5-plain colored"></i>
+                            <div class="icon__name">HTML</div>
+                        </div>    
+                        <div class="icon icon__grid__item--2">
+                            <i class="devicon-css3-plain colored"></i>
+                            <div class="icon__name">CSS</div>
+                        </div>
+                        <div class="icon icon__grid__item--3">
+                            <i class="devicon-javascript-plain colored"></i>
+                            <div class="icon__name">JAVASCRIPT</div>
+                        </div>
+                        <div class="icon icon__grid__item--4">
+                            <i class="devicon-nodejs-plain colored"></i>
+                            <div class="icon__name">NODE JS</div>
+                        </div>
+                        <div class="icon icon__grid__item--5">
+                            <i class="devicon-react-original colored"></i>
+                            <div class="icon__name">REACT</div>
+                        </div>
+                        <div class="icon icon__grid__item--6">
+                            <i class="devicon-webpack-plain colored"></i>
+                            <div class="icon__name">WEBPACK</div>
+                        </div>
+                        <div class="icon icon__grid__item--7">
+                            <i class="devicon-sass-original colored"></i>
+                            <div class="icon__name">SASS</div>
+                        </div>
+                    </div> <!--icon_grid-->
+                </div> <!--main__skills__content-->
+            </section>
+
+            <section class="main__projects">
+                <div class="main__projects__content">
+                    <h1>My Projects</h1>
+                </div> <!--main__projects__content-->
+            </section> <!--main__projects-->
+
+            <section class="main__contact">
+                <div class="main__contact__content">
+                    <h1>Contact</h1>
+                </div> <!--main__contact__content-->
+            </section> <!--main__contact-->
         </main>
     </div>
 </body>

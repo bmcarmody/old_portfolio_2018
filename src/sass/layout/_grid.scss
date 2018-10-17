@@ -18,44 +18,81 @@
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-areas: 
-        "container__border--left nav container__border--right" 
-        ". content ."; 
-
-    .container__border { //There is no class .g-border, it's only for scss grouping
-        &--left {
-            border-bottom: 1px solid $color-light-grey;
-            grid-area: container__border--left;
-        }
-
-        &--right {
-            border-bottom: 1px solid $color-light-grey;
-            grid-area: container__border--right;
-        }
-    }
+        "nav nav nav" 
+        "main main main";
     
     .nav {
         grid-area: nav;
         display: flex;
+        border-bottom: 1px solid $color-light-grey;
+
+        &__content {
+            @include grid__item--center;
+        }
     }
 
-    .content {
-        grid-area: content;
-    }
-
-    .icon__grid {
+    .main {
+        grid-area: main;
         display: grid;
-        grid-template-columns: repeat(5, 1fr);
         grid-template-areas: 
-            "item1 item2 item3 item4 item5"
-            "item6 item7 . . .";
+            "about about about"
+            "skills skills skills"
+            "projects projects projects"
+            "contact contact contact";
 
-        //Gives each item a grid area and place-self value
-        @for $i from 1 through 7 {
-            &__item--#{$i} {
-                grid-area: item#{$i};
-                align-self: center;
-                justify-self: center;
+        &__about {
+            grid-area: about;
+            @include grid__item__background--lgrey;
+
+            &__content {
+                @include grid__item--center;
+            }
+        }
+
+        &__skills {
+            grid-area: skills;
+            @include grid__item__background--dgrey;
+
+            &__content {
+                @include grid__item--center;
+
+                .icon__grid {
+                    display: grid;
+                    grid-template-columns: repeat(5, 1fr);
+                    grid-template-areas: 
+                        "item1 item2 item3 item4 item5"
+                        "item6 item7 . . .";
+            
+                    //Gives each item a grid area and place-self value
+                    @for $i from 1 through 7 {
+                        &__item--#{$i} {
+                            grid-area: item#{$i};
+                            align-self: center;
+                            justify-self: center;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__projects {
+            grid-area: projects;
+            @include grid__item__background--lgrey;
+
+            &__content {
+                @include grid__item--center;
+            }
+        }
+
+        &__contact {
+            grid-area: contact;
+            @include grid__item__background--dgrey;
+
+            &__content {
+                @include grid__item--center;
             }
         }
     }
+
+    
 }

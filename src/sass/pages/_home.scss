@@ -1,7 +1,6 @@
 .main {
 
     h1 {
-        margin-top: 5rem;
         font-size: 6rem;
         border-bottom: 3px solid $color-dark-grey;
     }
@@ -13,5 +12,38 @@
     p {
         margin-top: 2rem;
         font-size: 2rem;
+    }
+
+    section {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+
+    &__about {
+        &__content {
+            @include grid__item--center;
+        }
+    }
+
+    &__skills {
+        @include grid__item__background--lgrey;
+
+        &__content {
+            @include grid__item--center;
+        }
+    }
+
+    &__projects {
+        &__content {
+            @include grid__item--center;
+        }
+    }
+
+    &__contact {
+        @include grid__item__background--lgrey;
+
+        &__content {
+            @include grid__item--center;
+        }
     }
 }

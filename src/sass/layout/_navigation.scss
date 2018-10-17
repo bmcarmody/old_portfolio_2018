@@ -1,6 +1,7 @@
 .nav {
     font-size: $navigation-font-size;
     height: $navigation-height;
+    border-bottom: 1px solid $color-light-grey;
     
     a {
         margin-top: auto;
@@ -9,5 +10,9 @@
         text-decoration: none;
         border-bottom: 1px solid $color-dark-grey;
         padding-bottom: $navigation-bpadding;
+    }
+
+    &__content {
+        @include grid__item--center;
     }
 }

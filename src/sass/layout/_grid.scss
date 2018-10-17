@@ -24,11 +24,6 @@
     .nav {
         grid-area: nav;
         display: flex;
-        border-bottom: 1px solid $color-light-grey;
-
-        &__content {
-            @include grid__item--center;
-        }
     }
 
     .main {
@@ -42,20 +37,12 @@
 
         &__about {
             grid-area: about;
-            @include grid__item__background--lgrey;
-
-            &__content {
-                @include grid__item--center;
-            }
         }
 
         &__skills {
             grid-area: skills;
-            @include grid__item__background--dgrey;
 
             &__content {
-                @include grid__item--center;
-
                 .icon__grid {
                     display: grid;
                     grid-template-columns: repeat(5, 1fr);
@@ -77,20 +64,10 @@
 
         &__projects {
             grid-area: projects;
-            @include grid__item__background--lgrey;
-
-            &__content {
-                @include grid__item--center;
-            }
         }
 
         &__contact {
             grid-area: contact;
-            @include grid__item__background--dgrey;
-
-            &__content {
-                @include grid__item--center;
-            }
         }
     }
 

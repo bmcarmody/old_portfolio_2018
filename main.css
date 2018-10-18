@@ -16,6 +16,34 @@ body {
   font-style: normal;
   font-weight: bold; }
 
+.icon__name {
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  font-weight: 600; }
+
+.icon {
+  margin-top: 1.5rem;
+  width: fit-content;
+  text-align: center; }
+  .icon i {
+    font-size: 4rem !important; }
+  .icon__name {
+    width: fit-content;
+    font-size: 1.4rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 5px;
+    padding-left: 5px;
+    background-color: #AEE; }
+
+.skill__card {
+  margin-top: 3rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 1rem; }
+
 .header {
   display: grid; }
   .header__picture {
@@ -28,16 +56,100 @@ body {
 .container {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
-  grid-template-areas: "g-border-left nav g-border-right"; }
-  .container .g-border-left {
-    border-bottom: 1px solid #eee;
-    grid-area: g-border-left; }
-  .container .g-border-right {
-    border-bottom: 1px solid #eee;
-    grid-area: g-border-right; }
+  grid-template-areas: "nav nav nav"  "main main main"; }
   .container .nav {
     grid-area: nav;
     display: flex; }
+  .container .main {
+    grid-area: main;
+    display: grid;
+    grid-template-areas: "about about about" "skills skills skills" "projects projects projects" "contact contact contact"; }
+    .container .main__about {
+      grid-area: about; }
+    .container .main__skills {
+      grid-area: skills; }
+      .container .main__skills__content .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: "front back tools"; }
+        .container .main__skills__content .cards .skill__card--front {
+          grid-area: front; }
+          .container .main__skills__content .cards .skill__card--front .icon__grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-areas: "item1 item2 item3"  "item4 item5 ."; }
+            .container .main__skills__content .cards .skill__card--front .icon__grid__item--1 {
+              grid-area: item1;
+              align-self: center;
+              justify-self: center; }
+            .container .main__skills__content .cards .skill__card--front .icon__grid__item--2 {
+              grid-area: item2;
+              align-self: center;
+              justify-self: center; }
+            .container .main__skills__content .cards .skill__card--front .icon__grid__item--3 {
+              grid-area: item3;
+              align-self: center;
+              justify-self: center; }
+            .container .main__skills__content .cards .skill__card--front .icon__grid__item--4 {
+              grid-area: item4;
+              align-self: center;
+              justify-self: center; }
+            .container .main__skills__content .cards .skill__card--front .icon__grid__item--5 {
+              grid-area: item5;
+              align-self: center;
+              justify-self: center; }
+        .container .main__skills__content .cards .skill__card--back {
+          grid-area: back; }
+          .container .main__skills__content .cards .skill__card--back .icon__grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-areas: "item1 item2 item3"  "item4 . ."; }
+            .container .main__skills__content .cards .skill__card--back .icon__grid__item--1 {
+              grid-area: item1;
+              align-self: center;
+              justify-self: center; }
+            .container .main__skills__content .cards .skill__card--back .icon__grid__item--2 {
+              grid-area: item2;
+              align-self: center;
+              justify-self: center; }
+            .container .main__skills__content .cards .skill__card--back .icon__grid__item--3 {
+              grid-area: item3;
+              align-self: center;
+              justify-self: center; }
+            .container .main__skills__content .cards .skill__card--back .icon__grid__item--4 {
+              grid-area: item4;
+              align-self: center;
+              justify-self: center; }
+        .container .main__skills__content .cards .skill__card--tools {
+          grid-area: tools; }
+          .container .main__skills__content .cards .skill__card--tools .icon__grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-areas: "item1 item2 item3"  "item4 item5 ."; }
+            .container .main__skills__content .cards .skill__card--tools .icon__grid__item--1 {
+              grid-area: item1;
+              align-self: center;
+              justify-self: center; }
+            .container .main__skills__content .cards .skill__card--tools .icon__grid__item--2 {
+              grid-area: item2;
+              align-self: center;
+              justify-self: center; }
+            .container .main__skills__content .cards .skill__card--tools .icon__grid__item--3 {
+              grid-area: item3;
+              align-self: center;
+              justify-self: center; }
+            .container .main__skills__content .cards .skill__card--tools .icon__grid__item--4 {
+              grid-area: item4;
+              align-self: center;
+              justify-self: center; }
+            .container .main__skills__content .cards .skill__card--tools .icon__grid__item--5 {
+              grid-area: item5;
+              align-self: center;
+              justify-self: center; }
+    .container .main__projects {
+      grid-area: projects; }
+    .container .main__contact {
+      grid-area: contact; }
 
 .header {
   background: url(e0d4ca849fe7bf328440c5b3b5518ba0.png) repeat-x;
@@ -62,8 +174,43 @@ body {
     color: #445;
     text-decoration: none;
     border-bottom: 1px solid #445;
-    padding-bottom: 1.2rem; }
+    padding-bottom: 1.6rem; }
+  .nav__content {
+    width: 50%;
+    margin: auto; }
 
-p {
-  color: orange; }
+.main h1 {
+  font-size: 6rem;
+  border-bottom: 3px solid #445; }
+
+.main h2 {
+  font-size: 3rem; }
+
+.main p {
+  margin-top: 2rem;
+  font-size: 2rem; }
+
+.main section {
+  padding-top: 5rem;
+  padding-bottom: 5rem; }
+
+.main__about__content {
+  width: 50%;
+  margin: auto; }
+
+.main__skills {
+  background-color: #eee; }
+  .main__skills__content {
+    width: 50%;
+    margin: auto; }
+
+.main__projects__content {
+  width: 50%;
+  margin: auto; }
+
+.main__contact {
+  background-color: #eee; }
+  .main__contact__content {
+    width: 50%;
+    margin: auto; }
 

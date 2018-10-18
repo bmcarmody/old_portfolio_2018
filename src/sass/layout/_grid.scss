@@ -43,19 +43,69 @@
             grid-area: skills;
 
             &__content {
-                .icon__grid {
+                .cards {
                     display: grid;
-                    grid-template-columns: repeat(5, 1fr);
-                    grid-template-areas: 
-                        "item1 item2 item3 item4 item5"
-                        "item6 item7 . . .";
-            
-                    //Gives each item a grid area and place-self value
-                    @for $i from 1 through 7 {
-                        &__item--#{$i} {
-                            grid-area: item#{$i};
-                            align-self: center;
-                            justify-self: center;
+                    grid-template-columns: repeat(3, 1fr);
+                    grid-template-areas: "front back tools";
+
+                    .skill__card--front {
+                        grid-area: front;
+
+                        .icon__grid {
+                            display: grid;
+                            grid-template-columns: repeat(3, 1fr);
+                            grid-template-areas: 
+                                "item1 item2 item3" 
+                                "item4 item5 .";
+                    
+                            //Gives each item a grid area and place-self value
+                            @for $i from 1 through 5 {
+                                &__item--#{$i} {
+                                    grid-area: item#{$i};
+                                    align-self: center;
+                                    justify-self: center;
+                                }
+                            }
+                        }
+                    }
+                    .skill__card--back {
+                        grid-area: back;
+
+                        .icon__grid {
+                            display: grid;
+                            grid-template-columns: repeat(3, 1fr);
+                            grid-template-areas: 
+                                "item1 item2 item3" 
+                                "item4 . .";
+                    
+                            //Gives each item a grid area and place-self value
+                            @for $i from 1 through 4 {
+                                &__item--#{$i} {
+                                    grid-area: item#{$i};
+                                    align-self: center;
+                                    justify-self: center;
+                                }
+                            }
+                        }
+                    }
+                    .skill__card--tools {
+                        grid-area: tools;
+
+                        .icon__grid {
+                            display: grid;
+                            grid-template-columns: repeat(3, 1fr);
+                            grid-template-areas: 
+                                "item1 item2 item3" 
+                                "item4 item5 .";
+                    
+                            //Gives each item a grid area and place-self value
+                            @for $i from 1 through 5 {
+                                &__item--#{$i} {
+                                    grid-area: item#{$i};
+                                    align-self: center;
+                                    justify-self: center;
+                                }
+                            }
                         }
                     }
                 }

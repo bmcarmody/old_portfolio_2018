@@ -30,6 +30,12 @@
 
         &__content {
             @include grid__item--center;
+            position: relative;
+
+            #skills {
+                position: absolute;
+                top: -10rem;
+            }
         }
     }
 

@@ -2,6 +2,9 @@
     font-size: $navigation-font-size;
     height: $navigation-height;
     border-bottom: 1px solid $color-light-grey;
+    position: sticky;
+    top: 0;
+    background-color: $color-white;
     
     a {
         margin-top: auto;

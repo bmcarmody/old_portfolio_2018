@@ -22,6 +22,11 @@
     &__about {
         &__content {
             @include grid__item--center;
+            position: relative;
+
+            #about {
+                @include target__position;
+            }
         }
     }
 
@@ -33,8 +38,7 @@
             position: relative;
 
             #skills {
-                position: absolute;
-                top: -10rem;
+                @include target__position;
             }
         }
     }
@@ -42,6 +46,11 @@
     &__projects {
         &__content {
             @include grid__item--center;
+            position: relative;
+
+            #projects {
+                @include target__position;
+            }
         }
     }
 
@@ -50,6 +59,11 @@
 
         &__content {
             @include grid__item--center;
+            position: relative;
+
+            #contact {
+                @include target__position;
+            }
         }
     }
 }

@@ -10,3 +10,8 @@
 @mixin grid__item__background--dgrey {
     background-color: $color-dark-grey;
 }
+
+@mixin target__position {
+    position: absolute;
+    top: -10rem;
+}

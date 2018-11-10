@@ -9,12 +9,15 @@
     z-index: 10;
     
     a {
-        margin-top: auto;
         margin-right: $navigation-link-rspacing;
         color: $color-dark-grey;
         text-decoration: none;
-        border-bottom: 1px solid $color-dark-grey;
         padding-bottom: $navigation-bpadding;
+        
+        &:hover {
+            //TODO add JS code for link when clicked
+            border-bottom: 1px solid $color-dark-grey;
+        }
     }
 
     &__content {

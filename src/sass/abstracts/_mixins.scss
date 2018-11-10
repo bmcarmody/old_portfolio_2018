@@ -1,17 +1,7 @@
-@mixin grid__item--center {
-    width: 50%;
-    margin: auto;
-}
-
 @mixin grid__item__background--lgrey {
     background-color: $color-light-grey;
 }
 
 @mixin grid__item__background--dgrey {
     background-color: $color-dark-grey;
-}
-
-@mixin target__position {
-    position: absolute;
-    top: -10rem;
 }

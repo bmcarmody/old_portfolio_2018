@@ -18,8 +18,8 @@
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-areas: 
-        "nav nav nav" 
-        "main main main";
+        ". nav ." 
+        ". main .";
     
     .nav {
         grid-area: nav;

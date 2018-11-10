@@ -1,7 +1,6 @@
 .nav {
     font-size: $navigation-font-size;
     height: $navigation-height;
-    border-bottom: 1px solid $color-light-grey;
     position: -webkit-sticky; // Safari support
     position: sticky;
     top: 0;
@@ -18,9 +17,5 @@
             //TODO add JS code for link when clicked
             border-bottom: 1px solid $color-dark-grey;
         }
-    }
-
-    &__content {
-        @include grid__item--center;
     }
 }

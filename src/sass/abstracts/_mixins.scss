@@ -5,3 +5,9 @@
 @mixin grid__item__background--dgrey {
     background-color: $color-dark-grey;
 }
+
+@mixin default__grid($grid-area) {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: ". #{$grid-area} .";
+}

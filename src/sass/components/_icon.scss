@@ -7,6 +7,12 @@
         font-size: $icon-size !important;
 
     }
+
+    img {
+        width: $icon-size !important;
+
+    }
+
     &__name {
         width: fit-content;
         font-size: $icon-font-size; 

@@ -6,12 +6,13 @@
     top: 0;
     background-color: $color-white;
     z-index: 10;
+    border: 1px solid $color-light-grey;
+    padding-top: $navigation-tpadding;
     
     a {
         margin-right: $navigation-link-rspacing;
         color: $color-dark-grey;
         text-decoration: none;
-        padding-bottom: $navigation-bpadding;
         
         &:hover {
             //TODO add JS code for link when clicked

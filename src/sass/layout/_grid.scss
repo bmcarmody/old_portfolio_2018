@@ -15,25 +15,22 @@
 }
 
 .container {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-areas: 
-        ". nav ." 
-        ". main .";
-    
     .nav {
-        grid-area: nav;
-        display: flex;
+        @include default__grid(nav__content);
+        &__content {
+            grid-area: nav__content;
+            display: flex;
+        }
     }
 
     .main {
-        grid-area: main;
         display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
         grid-template-areas: 
-            "about about about"
-            "skills skills skills"
-            "projects projects projects"
-            "contact contact contact";
+            ". about ."
+            ". skills ."
+            ". projects ."
+            ". contact .";
 
         &__about {
             grid-area: about;
@@ -56,10 +53,10 @@
                             grid-template-columns: repeat(3, 1fr);
                             grid-template-areas: 
                                 "item1 item2 item3" 
-                                "item4 item5 .";
+                                "item4 item5 item6";
                     
                             //Gives each item a grid area and place-self value
-                            @for $i from 1 through 5 {
+                            @for $i from 1 through 6 {
                                 &__item--#{$i} {
                                     grid-area: item#{$i};
                                     align-self: center;
@@ -96,10 +93,11 @@
                             grid-template-columns: repeat(3, 1fr);
                             grid-template-areas: 
                                 "item1 item2 item3" 
-                                "item4 item5 .";
+                                "item4 item5 item6"
+                                "item7 item8 .";
                     
                             //Gives each item a grid area and place-self value
-                            @for $i from 1 through 5 {
+                            @for $i from 1 through 8 {
                                 &__item--#{$i} {
                                     grid-area: item#{$i};
                                     align-self: center;

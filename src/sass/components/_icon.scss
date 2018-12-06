@@ -11,7 +11,7 @@
 
     img {
         width: $icon-size !important;
-        margin-bottom: 4px;
+        margin-bottom: 5px;
     }
 
     &__name {
@@ -21,7 +21,20 @@
         margin-right: auto;
         padding-right: $icon-name-padding;
         padding-left: $icon-name-padding;
-        background-color: $color-light-blue;
-        border-radius: .2rem;
+
+        &--front {
+            background-color: $color-green;
+            border-radius: .2rem;
+        }
+
+        &--back {
+            background-color: $color-orange;
+            border-radius: .2rem;
+        }
+
+        &--tools {
+            background-color: $color-purple;
+            border-radius: .2rem;
+        }
     }
 }

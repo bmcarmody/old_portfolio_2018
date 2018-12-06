@@ -1,3 +1,13 @@
+body {
+    @import url('https://fonts.googleapis.com/css?family=Arimo');
+    font-family: 'Arimo', sans-serif !important;
+}
+
+h1, .skill__card__header {
+    @import url('https://fonts.googleapis.com/css?family=Pacifico');
+    font-family: 'Pacifico', cursive !important;
+}
+
 .nav {
     font-family: proxima-nova, sans-serif;
     font-style: normal;

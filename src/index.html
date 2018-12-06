@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="container-fluid">
-        <header class="header d-flex flex-column justify-content-center align-items-center border border-danger">
+        <header class="header d-flex flex-column justify-content-center align-items-center">
             <img class="header__picture" src="../Picture1.png" alt="Picture of Brandon Carmody">
             <h3 class="header__name">Brandon Carmody</h3>
             <h4 class="header__title">Fullstack Developer</h4>
@@ -17,7 +17,7 @@
         </header>
     </div>
     <div class="container">
-        <nav class="nav d-flex align-items-center border border-danger">
+        <nav class="nav d-flex align-items-center">
             <a class="nav-link" href="#about">ABOUT</a>
             <a class="nav-link" href="#skills">SKILLS</a>
             <a class="nav-link" href="#projects">PROJECTS</a>
@@ -40,109 +40,115 @@
                     </p>
                 </div>
             </section> <!--about-->
+            <br>
             
             <section>
                 <a id="skills"></a> <!--Navigation target for section-->
                 <h1>My Skills</h1>
                 <hr>
-                <div class="skills row no-gutters">
-                    <div class="col-4 px-2">
+                <div class="skill row no-gutters">
+                    <div class="col-lg-4 col-sm-12 px-2">
                         <div class="skill__card">
-                            <h4 class="skill__card__header">Frontend</h4>
+                            <h4 class="skill__card__header skill__card__header--front">Frontend</h4>
                             <div class="row no-gutters text-center">
-                                <div class="col-xl-3 icon">
+                                <div class="col-xl-3 col-4 icon">
                                     <i class="devicon-html5-plain colored"></i>
-                                    <div class="icon__name">HTML</div>
+                                    <div class="icon__name icon__name--front">HTML</div>
                                 </div>    
-                                <div class="col-xl-3 icon">
+                                <div class="col-xl-3 col-4 icon">
                                     <i class="devicon-css3-plain colored"></i>
-                                    <div class="icon__name">CSS</div>
+                                    <div class="icon__name icon__name--front">CSS</div>
                                 </div>
-                                <div class="col-xl-3 icon">
+                                <div class="col-xl-3 col-4 icon">
                                     <i class="devicon-javascript-plain colored"></i>
-                                    <div class="icon__name">JS</div>
+                                    <div class="icon__name icon__name--front">JS</div>
                                 </div>
-                                <div class="col-xl-3 icon">
+                                <div class="col-xl-3 col-4 icon">
                                     <i class="devicon-react-original colored"></i>
-                                    <div class="icon__name">REACT</div>
+                                    <div class="icon__name icon__name--front">REACT</div>
                                 </div>
-                                <div class="col-xl-3 icon">
+                                <div class="col-xl-3 col-4 icon">
                                     <i class="devicon-sass-original colored"></i>
-                                    <div class="icon__name">SASS</div>
+                                    <div class="icon__name icon__name--front">SASS</div>
                                 </div>
-                                <div class="col-xl-3 icon">
+                                <div class="col-xl-3 col-4 icon">
                                     <img src="./../icons/icon-handlebars.png" alt="handlebars icon">
-                                    <div class="icon__name">HBS</div>
+                                    <div class="icon__name icon__name--front">HBS</div>
                                 </div>
                             </div>
                         </div>
                     </div>
     
-                    <div class="col-4 px-2">
+                    <div class="col-lg-4 col-sm-12 px-2">
                         <div class="skill__card">
-                            <h4 class="skill__card__header">Backend</h4>
+                            <h4 class="skill__card__header skill__card__header--back">Backend</h4>
                             <div class="row no-gutters text-center">
-                                <div class="col-xl-3 icon">
+                                <div class="col-xl-3 col-4 icon">
                                     <i class="devicon-nodejs-plain colored"></i>
-                                    <div class="icon__name">NODE</div>
+                                    <div class="icon__name icon__name--back">NODE</div>
                                 </div>    
-                                <div class="col-xl-3 icon">
+                                <div class="col-xl-3 col-4 icon">
                                     <i class="devicon-express-original colored"></i>
-                                    <div class="icon__name">EXPRESS</div>
+                                    <div class="icon__name icon__name--back">EXPRESS</div>
                                 </div>
-                                <div class="col-xl-3 icon">
+                                <div class="col-xl-3 col-4 icon">
                                     <i class="devicon-mongodb-plain colored"></i>
-                                    <div class="icon__name">MONGO</div>
+                                    <div class="icon__name icon__name--back">MONGO</div>
                                 </div>
-                                <div class="col-xl-3 icon">
+                                <div class="col-xl-3 col-4 icon">
                                     <i class="devicon-mocha-plain colored"></i>
-                                    <div class="icon__name">MOCHA</div>
+                                    <div class="icon__name icon__name--back">MOCHA</div>
+                                </div>
+                                <div class="col-xl-3 col-4 icon">
+                                        <i class="devicon-mysql-plain colored"></i>
+                                    <div class="icon__name icon__name--back">MYSQL</div>
                                 </div>
                             </div>
                         </div>
                     </div>
     
-                    <div class="col-4 px-2">
+                    <div class="col-lg-4 col-sm-12 px-2">
                         <div class="skill__card">
-                            <h4 class="skill__card__header">Tools</h4>
+                            <h4 class="skill__card__header skill__card__header--tools">Tools</h4>
                             <div class="row no-gutters text-center">
-                                <div class="col-xl-3 icon">
+                                <div class="col-xl-3 col-4 icon">
                                     <i class="devicon-git-plain colored"></i>
-                                    <div class="icon__name">GIT</div>
+                                    <div class="icon__name icon__name--tools">GIT</div>
                                 </div>
-                                <div class="col-xl-3 icon">
+                                <div class="col-xl-3 col-4 icon">
                                     <i class="devicon-webpack-plain colored"></i>
-                                    <div class="icon__name">WEBPACK</div>
+                                    <div class="icon__name icon__name--tools">WEBPACK</div>
                                 </div>    
-                                <div class="col-xl-3 icon">
+                                <div class="col-xl-3 col-4 icon">
                                     <i class="devicon-heroku-original colored"></i>
-                                    <div class="icon__name">HEROKU</div>
+                                    <div class="icon__name icon__name--tools">HEROKU</div>
                                 </div>
-                                <div class="col-xl-3 icon">
+                                <div class="col-xl-3 col-4 icon">
                                     <i class="devicon-github-plain colored"></i>
-                                    <div class="icon__name">GITHUB</div>
+                                    <div class="icon__name icon__name--tools">GITHUB</div>
                                 </div>
-                                <div class="col-xl-3 icon">
+                                <div class="col-xl-3 col-4 icon">
                                     <i class="devicon-babel-plain colored"></i>
-                                    <div class="icon__name">BABEL</div>
+                                    <div class="icon__name icon__name--tools">BABEL</div>
                                 </div>
-                                <div class="col-xl-3 icon">
+                                <div class="col-xl-3 col-4 icon">
                                     <i class="devicon-trello-plain colored"></i>
-                                    <div class="icon__name">TRELLO</div>
+                                    <div class="icon__name icon__name--tools">TRELLO</div>
                                 </div>
-                                <div class="col-xl-3 icon">
+                                <div class="col-xl-3 col-4 icon">
                                     <img src='./../icons/icon-postman.png' title='postman icon'>
-                                    <div class="icon__name">POSTMAN</div>
+                                    <div class="icon__name icon__name--tools">POSTMAN</div>
                                 </div>
-                                <div class="col-xl-3 icon">
+                                <div class="col-xl-3 col-4 icon">
                                     <img src='./../icons/icon-robo3t.png' title='robomongo icon'>
-                                    <div class="icon__name">ROBO-M</div>
+                                    <div class="icon__name icon__name--tools">ROBO-M</div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+            <br>
 
             <section class="projects">
                 <div class="projects__content">
@@ -158,6 +164,7 @@
                     </p>
                 </div> <!--projects__content-->
             </section> <!--projects-->
+            <br>
 
             <section class="contact">
                 <div class="contact__content">

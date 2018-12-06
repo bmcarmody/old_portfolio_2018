@@ -1,15 +1,29 @@
-.container-fluid {
-    padding: 0 !important;
-}
+body {
+    background-image: url('./../../body-background.jpg') !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 
-.main {
-    .skills {
-        &--header {
-            text-align: center;
+    .container-fluid {
+        padding: 0 !important;
+    }
+    
+    .main {
+        background-color: rgba(246,247,235, .7);
+        border-radius: .7rem;
+        padding: 1rem;
+        .skills {
+            &--header {
+                text-align: center;
+    
+            }
+        }
 
+        hr {
+            border: none;
+            height: 2px;
+            color: #666;
+            background-color: #666;
         }
     }
-}
-body {
-    background-color: #009DDC !important;
 }

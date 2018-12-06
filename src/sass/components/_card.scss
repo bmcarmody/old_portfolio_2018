@@ -1,13 +1,25 @@
 .skill {
     &__card {
-        margin-bottom: 1.5rem;
-        background-color: #faf7f7;
-        border-radius: 1rem;
         padding: 0px;
 
         &__header {
             padding-top: 1rem;
             text-align: center;
+            font-size: 2rem;
+        
+            &--front {
+                border-bottom: 3px solid $color-green;
+            }
+
+            &--back {
+                border-bottom: 3px solid $color-orange;
+            }
+
+            &--tools {
+                border-bottom: 3px solid $color-purple;
+            }
         }
     }
+
+
 }

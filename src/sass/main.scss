@@ -8,8 +8,8 @@
 @import "base/typography";
 
 // //components
-// @import "components/icon";
-// @import "components/card";
+@import "components/icon";
+@import "components/card";
 
 // //layout
 // @import "layout/grid";
@@ -17,4 +17,6 @@
 // @import "layout/navigation";
 
 // //pages
-// @import "pages/home";
+@import "pages/home";
+
+@import "./vendor/bootstrap-4.1.3/scss/bootstrap.scss";

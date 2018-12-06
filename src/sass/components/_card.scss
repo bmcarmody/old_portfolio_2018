@@ -1,14 +1,13 @@
-.skill__card {
-    margin-top: 3rem;
-    padding: 1rem;
-    background-color: $color-white;
-    border-radius: 1rem;
+.skill {
+    &__card {
+        margin-bottom: 1.5rem;
+        background-color: #faf7f7;
+        border-radius: 1rem;
+        padding: 0px;
 
-    &:first-of-type {
-        margin-right: 1rem;
-    }
-
-    &:last-of-type {
-        margin-left: 1rem;
+        &__header {
+            padding-top: 1rem;
+            text-align: center;
+        }
     }
 }

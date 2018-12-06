@@ -1,5 +1,5 @@
 .header {
-    background: url('../../pattern.png') repeat-x;
+    background-color: #2A2D34;
     height: $header-height;
     color: $color-white;
 
@@ -8,9 +8,6 @@
         width: $photo-dimension;
         border-radius: 50%;
         object-fit: cover;
-    }
-
-    &__title {
-        padding-bottom: 2rem; //TEMPORARY
+        margin-bottom: 0.5rem;
     }
 }

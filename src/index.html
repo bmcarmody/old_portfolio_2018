@@ -5,32 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <title>Brandon Carmody</title>
 </head>
 <body>
-    <div class="container">
-        <header class="header d-flex flex-column justify-content-center align-items-center">
+    <div class="container-fluid">
+        <header class="header d-flex flex-column justify-content-center align-items-center border border-danger">
             <img class="header__picture" src="../Picture1.png" alt="Picture of Brandon Carmody">
             <h3 class="header__name">Brandon Carmody</h3>
             <h4 class="header__title">Fullstack Developer</h4>
             <!-- TODO - Adds social media plugs-->
         </header>
-        <nav class="nav">
-            <div class="nav__content">
-                <!-- TODO add the rest of links with correct positioning-->
-                <a href="#about">ABOUT</a>
-                <a href="#skills">SKILLS</a>
-                <a href="#projects">PROJECTS</a>
-                <a href="#contact">CONTACT</a>
-            </div>
+    </div>
+    <div class="container">
+        <nav class="nav d-flex align-items-center border border-danger">
+            <a class="nav-link" href="#about">ABOUT</a>
+            <a class="nav-link" href="#skills">SKILLS</a>
+            <a class="nav-link" href="#projects">PROJECTS</a>
+            <a class="nav-link" href="#contact">CONTACT</a>
         </nav>
 
         <main class="main"> 
-            <section class="main__about">
-                <div class="main__about__content">
+            <section class="row about">
+                <div class="col about__content">
                     <a id="about"></a> <!--Navigation target for section-->
                     <h1>About Me</h1>
+                    <hr>
                     <p>
                         I'm a fullstack developer who is passionate about web technologies, both
                         front and backend. I can build complex, intrecate applications using the 
@@ -39,111 +38,117 @@
                         applications that will enpower web users. Please check out my portfolio
                         and contact me!
                     </p>
-                </div> <!--main__about__content-->
-            </section> <!--main__about-->
+                </div>
+            </section> <!--about-->
             
-            <section class="main__skills">
-                <div class="main__skills__content">
-                    <a id="skills"></a> <!--Navigation target for section-->
-                    <h1>My Skills</h1>
-                    <div class="cards">
-                        <div class="skill__card skill__card--front">
-                            <h2>Frontend</h2>
-                            <div class="icon__grid">
-                                <div class="icon icon__grid__item--1">
+            <section>
+                <a id="skills"></a> <!--Navigation target for section-->
+                <h1>My Skills</h1>
+                <hr>
+                <div class="skills row no-gutters">
+                    <div class="col-4 px-2">
+                        <div class="skill__card">
+                            <h4 class="skill__card__header">Frontend</h4>
+                            <div class="row no-gutters text-center">
+                                <div class="col-xl-3 icon">
                                     <i class="devicon-html5-plain colored"></i>
                                     <div class="icon__name">HTML</div>
                                 </div>    
-                                <div class="icon icon__grid__item--2">
+                                <div class="col-xl-3 icon">
                                     <i class="devicon-css3-plain colored"></i>
                                     <div class="icon__name">CSS</div>
                                 </div>
-                                <div class="icon icon__grid__item--3">
+                                <div class="col-xl-3 icon">
                                     <i class="devicon-javascript-plain colored"></i>
-                                    <div class="icon__name">JAVASCRIPT</div>
+                                    <div class="icon__name">JS</div>
                                 </div>
-                                <div class="icon icon__grid__item--4">
+                                <div class="col-xl-3 icon">
                                     <i class="devicon-react-original colored"></i>
                                     <div class="icon__name">REACT</div>
                                 </div>
-                                <div class="icon icon__grid__item--5">
+                                <div class="col-xl-3 icon">
                                     <i class="devicon-sass-original colored"></i>
                                     <div class="icon__name">SASS</div>
                                 </div>
-                                <div class="icon icon__grid__item--6">
+                                <div class="col-xl-3 icon">
                                     <img src="./../icons/icon-handlebars.png" alt="handlebars icon">
-                                    <div class="icon__name">HANDLEBARS</div>
+                                    <div class="icon__name">HBS</div>
                                 </div>
-                            </div> <!--icon_grid-->
-                        </div> <!--skill__card skill__card--front-->
-
-                        <div class="skill__card skill__card--back">
-                            <h2>Backend</h2>
-                            <div class="icon__grid">
-                                <div class="icon icon__grid__item--1">
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-4 px-2">
+                        <div class="skill__card">
+                            <h4 class="skill__card__header">Backend</h4>
+                            <div class="row no-gutters text-center">
+                                <div class="col-xl-3 icon">
                                     <i class="devicon-nodejs-plain colored"></i>
                                     <div class="icon__name">NODE</div>
                                 </div>    
-                                <div class="icon icon__grid__item--2">
+                                <div class="col-xl-3 icon">
                                     <i class="devicon-express-original colored"></i>
                                     <div class="icon__name">EXPRESS</div>
                                 </div>
-                                <div class="icon icon__grid__item--3">
+                                <div class="col-xl-3 icon">
                                     <i class="devicon-mongodb-plain colored"></i>
                                     <div class="icon__name">MONGO</div>
                                 </div>
-                                <div class="icon icon__grid__item--4">
+                                <div class="col-xl-3 icon">
                                     <i class="devicon-mocha-plain colored"></i>
                                     <div class="icon__name">MOCHA</div>
                                 </div>
-                            </div> <!--icon_grid-->
-                        </div> <!--skill__card skill__card--back-->
-
-                        <div class="skill__card skill__card--tools">
-                            <h2>Tools</h2>
-                            <div class="icon__grid">
-                                <div class="icon icon__grid__item--1">
-                                    <i class="devicon-webpack-plain colored"></i>
-                                    <div class="icon__name">WEBPACK</div>
-                                </div>    
-                                <div class="icon icon__grid__item--2">
-                                    <i class="devicon-heroku-original colored"></i>
-                                    <div class="icon__name">HEROKU</div>
-                                </div>
-                                <div class="icon icon__grid__item--3">
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-4 px-2">
+                        <div class="skill__card">
+                            <h4 class="skill__card__header">Tools</h4>
+                            <div class="row no-gutters text-center">
+                                <div class="col-xl-3 icon">
                                     <i class="devicon-git-plain colored"></i>
                                     <div class="icon__name">GIT</div>
                                 </div>
-                                <div class="icon icon__grid__item--4">
+                                <div class="col-xl-3 icon">
+                                    <i class="devicon-webpack-plain colored"></i>
+                                    <div class="icon__name">WEBPACK</div>
+                                </div>    
+                                <div class="col-xl-3 icon">
+                                    <i class="devicon-heroku-original colored"></i>
+                                    <div class="icon__name">HEROKU</div>
+                                </div>
+                                <div class="col-xl-3 icon">
                                     <i class="devicon-github-plain colored"></i>
                                     <div class="icon__name">GITHUB</div>
                                 </div>
-                                <div class="icon icon__grid__item--5">
+                                <div class="col-xl-3 icon">
                                     <i class="devicon-babel-plain colored"></i>
                                     <div class="icon__name">BABEL</div>
                                 </div>
-                                <div class="icon icon__grid__item--6">
+                                <div class="col-xl-3 icon">
                                     <i class="devicon-trello-plain colored"></i>
                                     <div class="icon__name">TRELLO</div>
                                 </div>
-                                <div class="icon icon__grid__item--7">
+                                <div class="col-xl-3 icon">
                                     <img src='./../icons/icon-postman.png' title='postman icon'>
                                     <div class="icon__name">POSTMAN</div>
                                 </div>
-                                <div class="icon icon__grid__item--8">
+                                <div class="col-xl-3 icon">
                                     <img src='./../icons/icon-robo3t.png' title='robomongo icon'>
-                                    <div class="icon__name">ROBOMONGO</div>
+                                    <div class="icon__name">ROBO-M</div>
                                 </div>
-                            </div> <!--icon_grid-->
-                        </div> <!--skill__card skill__card--tools-->
-                    </div> <!--cards-->
-                </div> <!--main__skills__content-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
 
-            <section class="main__projects">
-                <div class="main__projects__content">
+            <section class="projects">
+                <div class="projects__content">
                     <a id="projects"></a> <!--Navigation target for section-->
                     <h1>My Projects</h1>
+                    <hr>
                     <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quo quae veniam deleniti totam omnis alias exercitationem odio nobis rerum. Quo, molestias explicabo. Harum, facilis soluta? Assumenda quam aperiam rerum.
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit earum iusto modi maxime laborum, ipsum libero vel delectus consectetur ut tenetur quod numquam sint corporis possimus perspiciatis deserunt rem aliquam?
@@ -151,13 +156,14 @@
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque libero, natus corporis quis minima amet incidunt saepe quae officia tempore nam consectetur dolorum aperiam ullam. Culpa vero sequi eaque quod!
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate magni inventore praesentium architecto. Nesciunt hic, facere delectus possimus, minus ea animi a odio culpa repudiandae, rem laborum harum tempora aspernatur!
                     </p>
-                </div> <!--main__projects__content-->
-            </section> <!--main__projects-->
+                </div> <!--projects__content-->
+            </section> <!--projects-->
 
-            <section class="main__contact">
-                <div class="main__contact__content">
+            <section class="contact">
+                <div class="contact__content">
                     <a id="contact"></a> <!--Navigation target for section-->
                     <h1>Contact</h1>
+                    <hr>
                     <p>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam velit recusandae necessitatibus libero maiores deserunt explicabo harum, quas accusamus. Voluptas, reprehenderit. Veniam veritatis, ipsam dicta tenetur repudiandae cupiditate minima amet.
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse ipsa molestias assumenda qui ullam quos iure sequi eum amet necessitatibus aperiam veritatis obcaecati, fuga ab molestiae maxime. Labore, expedita aliquid.
@@ -166,8 +172,8 @@
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi laudantium excepturi placeat blanditiis facere, quaerat exercitationem? Cumque unde ipsam velit odio. Aspernatur iusto atque minus fugit a labore voluptatem qui?
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis animi aliquam nobis deserunt modi odio aliquid at in, reiciendis fuga. Sunt ipsam error saepe dolorum at aliquid dignissimos ex qui?
                     </p>
-                </div> <!--main__contact__content-->
-            </section> <!--main__contact-->
+                </div> <!--contact__content-->
+            </section> <!--contact-->
         </main>
     </div>
 </body>

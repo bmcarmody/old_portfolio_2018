@@ -1,23 +1,15 @@
+.container-fluid {
+    padding: 0 !important;
+}
+
 .main {
+    .skills {
+        &--header {
+            text-align: center;
 
-    background-color: rgba(246,245,250, .5);
-
-    h1 {
-        font-size: 6rem;
-        border-bottom: 3px solid $color-dark-grey;
+        }
     }
-
-    h2 {
-        font-size: 3rem;
-    }
-
-    p {
-        margin-top: 2rem;
-        font-size: 2rem;
-    }
-
-    section {
-        padding-top: 5rem;
-        padding-bottom: 5rem;
-    }
+}
+body {
+    background-color: #009DDC !important;
 }

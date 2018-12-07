@@ -1,0 +1,45 @@
+footer {
+    hr {
+        border: none;
+        height: 2px;
+        color: $color-light-grey2;
+        background-color: $color-light-grey2;
+
+        
+    }
+    h6 {
+        text-align: center;
+        font-weight: bold;
+    }
+
+    ul {
+        text-align: center;
+        a {
+            text-decoration: none;
+            color: $color-black;
+            
+            &:hover {
+                text-decoration: none;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .sections {
+        a:hover {
+            color: $color-green;
+        }
+    }
+
+    .projects {
+        a:hover {
+            color: $color-orange;
+        }
+    }
+
+    .profiles {
+        a:hover {
+            color: $color-purple;
+        }
+    }
+}

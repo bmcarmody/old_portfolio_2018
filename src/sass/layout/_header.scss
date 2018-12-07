@@ -9,4 +9,25 @@
         object-fit: cover;
         margin-bottom: $header-margin-bottom;
     }
+
+    i {
+        font-size: 1.5rem;
+    }
+
+    .fa-github {
+        &:hover {
+            color: $color-green;
+        }
+    }
+
+    .fa-linkedin-square {
+        &:hover {
+            color: #4875B4;
+        }
+    }
+
+    .social__icons {
+        color: $color-white;
+        text-decoration: none;
+    }
 }

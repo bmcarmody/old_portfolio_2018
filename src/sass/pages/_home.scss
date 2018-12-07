@@ -1,0 +1,54 @@
+body {
+    background-image: url('./../../img/webpage-bg.jpg') !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    .content__background {
+        background-color: $main-color-backgound;
+        border-radius: $main-border-radius;
+        padding: $main-padding;
+        margin-bottom: 3rem;
+    }
+
+    .main {
+        hr {
+            border: none;
+            height: 2px;
+            color: $main-color-hr;
+            background-color: $main-color-hr;
+        }
+
+        h6 {
+            margin-top: 1rem;
+        }
+
+        .website__link {
+            color: $color-black;
+            
+            text-decoration: none;
+
+            &:hover {
+                font-weight: bold;
+            }
+
+            &--green {
+                &:hover {
+                    color: $color-green;
+                }
+            }
+
+            &--orange {
+                &:hover {
+                    color: $color-orange;
+                }
+            }
+
+            &--purple {
+                &:hover {
+                    color: $color-purple;
+                }
+            }
+        }
+    }
+}

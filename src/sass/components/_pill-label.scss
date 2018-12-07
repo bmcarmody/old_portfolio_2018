@@ -3,6 +3,9 @@
     padding-right: $pill-name-padding;
     padding-left: $pill-name-padding;
     
+    &__container {
+        margin-top: .5rem;
+    }
 
     &__skill {
         font-size: $pill-skill-font-size;

@@ -8,20 +8,19 @@
     <title>Brandon Carmody</title>
 </head>
 <body>
-    <div class="container-fluid">
+    <div class="container">
         <header class="header d-flex flex-column justify-content-center align-items-center">
-            <img class="header__picture" src="../Picture1.png" alt="Picture of Brandon Carmody">
+            <img class="header__picture" src="../img/bcarmody-headshot.png" alt="Picture of Brandon Carmody">
             <h3 class="header__name">Brandon Carmody</h3>
             <h4 class="header__title">Fullstack Developer</h4>
             <!-- TODO - Adds social media plugs-->
         </header>
-    </div>
-    <div class="container">
-        <nav class="nav d-flex align-items-center">
-            <a class="nav-link" href="#about">ABOUT</a>
-            <a class="nav-link" href="#skills">SKILLS</a>
-            <a class="nav-link" href="#projects">PROJECTS</a>
-            <a class="nav-link" href="#contact">CONTACT</a>
+    
+        <nav class="nav row text-center">
+            <a class="nav__link col-3" href="#about">ABOUT</a>
+            <a class="nav__link col-3" href="#skills">SKILLS</a>
+            <a class="nav__link col-3" href="#projects">PROJECTS</a>
+            <a class="nav__link col-3" href="#contact">CONTACT</a>
         </nav>
 
         <main class="main"> 
@@ -33,10 +32,14 @@
                     <p>
                         I'm a fullstack developer who is passionate about web technologies, both
                         front and backend. I can build complex, intrecate applications using the 
-                        best avaliable languages and tools for the job. I'm currently seeking a
-                        position where I will be using MEAN or MERN stack to create indepth 
-                        applications that will enpower web users. Please check out my portfolio
-                        and contact me!
+                        best avaliable languages and tools for the job. I'm fluent and like
+                        working with React, Node, and any SQL/NoSQL database but I'm always open to learning 
+                        new and different technologies. I'm currently seeking a full-time position as a 
+                        fullstack web developer that will deal with tasks from all parts of the programming spectrum.
+                        No task is too much for me, I love learning all the intrecacies about web development!
+                        Please, check out my LinkedIn, Github, and all of the projects I've been working hard on.
+                        <br><br>
+                        Thank you for viewing - Brandon Carmody
                     </p>
                 </div>
             </section> <!--about-->
@@ -46,102 +49,102 @@
                 <a id="skills"></a> <!--Navigation target for section-->
                 <h1>My Skills</h1>
                 <hr>
-                <div class="skill row no-gutters">
+                <div class="show row no-gutters">
                     <div class="col-lg-4 col-sm-12 px-2">
-                        <div class="skill__card">
-                            <h4 class="skill__card__header skill__card__header--front">Frontend</h4>
+                        <div class="show__card">
+                            <h4 class="show__card__header show__card__header--green">Frontend</h4>
                             <div class="row no-gutters text-center">
                                 <div class="col-xl-3 col-4 icon">
                                     <i class="devicon-html5-plain colored"></i>
-                                    <div class="icon__name icon__name--front">HTML</div>
+                                    <div class="icon__name icon__name--green">HTML</div>
                                 </div>    
                                 <div class="col-xl-3 col-4 icon">
                                     <i class="devicon-css3-plain colored"></i>
-                                    <div class="icon__name icon__name--front">CSS</div>
+                                    <div class="icon__name icon__name--green">CSS</div>
                                 </div>
                                 <div class="col-xl-3 col-4 icon">
                                     <i class="devicon-javascript-plain colored"></i>
-                                    <div class="icon__name icon__name--front">JS</div>
+                                    <div class="icon__name icon__name--green">JS</div>
                                 </div>
                                 <div class="col-xl-3 col-4 icon">
                                     <i class="devicon-react-original colored"></i>
-                                    <div class="icon__name icon__name--front">REACT</div>
+                                    <div class="icon__name icon__name--green">REACT</div>
                                 </div>
                                 <div class="col-xl-3 col-4 icon">
                                     <i class="devicon-sass-original colored"></i>
-                                    <div class="icon__name icon__name--front">SASS</div>
+                                    <div class="icon__name icon__name--green">SASS</div>
                                 </div>
                                 <div class="col-xl-3 col-4 icon">
                                     <img src="./../icons/icon-handlebars.png" alt="handlebars icon">
-                                    <div class="icon__name icon__name--front">HBS</div>
+                                    <div class="icon__name icon__name--green">HBS</div>
                                 </div>
                             </div>
                         </div>
                     </div>
     
                     <div class="col-lg-4 col-sm-12 px-2">
-                        <div class="skill__card">
-                            <h4 class="skill__card__header skill__card__header--back">Backend</h4>
+                        <div class="show__card">
+                            <h4 class="show__card__header show__card__header--orange">Backend</h4>
                             <div class="row no-gutters text-center">
                                 <div class="col-xl-3 col-4 icon">
                                     <i class="devicon-nodejs-plain colored"></i>
-                                    <div class="icon__name icon__name--back">NODE</div>
+                                    <div class="icon__name icon__name--orange">NODE</div>
                                 </div>    
                                 <div class="col-xl-3 col-4 icon">
                                     <i class="devicon-express-original colored"></i>
-                                    <div class="icon__name icon__name--back">EXPRESS</div>
+                                    <div class="icon__name icon__name--orange">EXPRESS</div>
                                 </div>
                                 <div class="col-xl-3 col-4 icon">
                                     <i class="devicon-mongodb-plain colored"></i>
-                                    <div class="icon__name icon__name--back">MONGO</div>
+                                    <div class="icon__name icon__name--orange">MONGO</div>
                                 </div>
                                 <div class="col-xl-3 col-4 icon">
                                     <i class="devicon-mocha-plain colored"></i>
-                                    <div class="icon__name icon__name--back">MOCHA</div>
+                                    <div class="icon__name icon__name--orange">MOCHA</div>
                                 </div>
                                 <div class="col-xl-3 col-4 icon">
                                         <i class="devicon-mysql-plain colored"></i>
-                                    <div class="icon__name icon__name--back">MYSQL</div>
+                                    <div class="icon__name icon__name--orange">MYSQL</div>
                                 </div>
                             </div>
                         </div>
                     </div>
     
                     <div class="col-lg-4 col-sm-12 px-2">
-                        <div class="skill__card">
-                            <h4 class="skill__card__header skill__card__header--tools">Tools</h4>
+                        <div class="show__card">
+                            <h4 class="show__card__header show__card__header--purple">Tools</h4>
                             <div class="row no-gutters text-center">
                                 <div class="col-xl-3 col-4 icon">
-                                    <i class="devicon-git-plain colored"></i>
-                                    <div class="icon__name icon__name--tools">GIT</div>
-                                </div>
-                                <div class="col-xl-3 col-4 icon">
                                     <i class="devicon-webpack-plain colored"></i>
-                                    <div class="icon__name icon__name--tools">WEBPACK</div>
+                                    <div class="icon__name icon__name--purple">WEBPACK</div>
                                 </div>    
                                 <div class="col-xl-3 col-4 icon">
                                     <i class="devicon-heroku-original colored"></i>
-                                    <div class="icon__name icon__name--tools">HEROKU</div>
+                                    <div class="icon__name icon__name--purple">HEROKU</div>
+                                </div>
+                                <div class="col-xl-3 col-4 icon">
+                                    <i class="devicon-git-plain colored"></i>
+                                    <div class="icon__name icon__name--purple">GIT</div>
                                 </div>
                                 <div class="col-xl-3 col-4 icon">
                                     <i class="devicon-github-plain colored"></i>
-                                    <div class="icon__name icon__name--tools">GITHUB</div>
+                                    <div class="icon__name icon__name--purple">GITHUB</div>
                                 </div>
                                 <div class="col-xl-3 col-4 icon">
                                     <i class="devicon-babel-plain colored"></i>
-                                    <div class="icon__name icon__name--tools">BABEL</div>
+                                    <div class="icon__name icon__name--purple">BABEL</div>
                                 </div>
                                 <div class="col-xl-3 col-4 icon">
                                     <i class="devicon-trello-plain colored"></i>
-                                    <div class="icon__name icon__name--tools">TRELLO</div>
+                                    <div class="icon__name icon__name--purple">TRELLO</div>
                                 </div>
                                 <div class="col-xl-3 col-4 icon">
                                     <img src='./../icons/icon-postman.png' title='postman icon'>
-                                    <div class="icon__name icon__name--tools">POSTMAN</div>
+                                    <div class="icon__name icon__name--purple">POSTMAN</div>
                                 </div>
                                 <div class="col-xl-3 col-4 icon">
                                     <img src='./../icons/icon-robo3t.png' title='robomongo icon'>
-                                    <div class="icon__name icon__name--tools">ROBO-M</div>
+                                    <div class="icon__name icon__name--purple">ROBO-M</div>
                                 </div>
                             </div>
                         </div>
@@ -151,18 +154,31 @@
             <br>
 
             <section class="projects">
-                <div class="projects__content">
-                    <a id="projects"></a> <!--Navigation target for section-->
-                    <h1>My Projects</h1>
-                    <hr>
-                    <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quo quae veniam deleniti totam omnis alias exercitationem odio nobis rerum. Quo, molestias explicabo. Harum, facilis soluta? Assumenda quam aperiam rerum.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit earum iusto modi maxime laborum, ipsum libero vel delectus consectetur ut tenetur quod numquam sint corporis possimus perspiciatis deserunt rem aliquam?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum quos provident assumenda excepturi, itaque distinctio, commodi tenetur praesentium labore, necessitatibus sed illum. Minus porro odio nostrum autem vitae earum mollitia.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque libero, natus corporis quis minima amet incidunt saepe quae officia tempore nam consectetur dolorum aperiam ullam. Culpa vero sequi eaque quod!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate magni inventore praesentium architecto. Nesciunt hic, facere delectus possimus, minus ea animi a odio culpa repudiandae, rem laborum harum tempora aspernatur!
-                    </p>
-                </div> <!--projects__content-->
+                <a id="projects"></a> <!--Navigation target for section-->
+                <h1>My Projects</h1>
+                <hr>
+                <div class="show row no-gutters">
+                    <div class="col-lg-4 col-sm-12 px-2">
+                        <div class="show__card">
+                            <h4 class="show__card__header show__card__header--green">This Site</h4>
+                            <h6><strong>Description</strong></h6>
+                            <p>
+                                This is the website that you're currently on! It showcases my skills,
+                                and projects.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 px-2">
+                        <div class="show__card">
+                            <h4 class="show__card__header show__card__header--orange">Todo API</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 px-2">
+                        <div class="show__card">
+                            <h4 class="show__card__header show__card__header--purple">Chat App</h4>
+                        </div>
+                    </div>
+                </div>
             </section> <!--projects-->
             <br>
 

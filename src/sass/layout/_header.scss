@@ -3,10 +3,10 @@
     color: $color-white;
 
     &__picture {
-        height: $photo-dimension;
-        width: $photo-dimension;
-        border-radius: 50%;
+        height: $header-photo-dimension;
+        width: $header-photo-dimension;
+        border-radius: $header-border-radius;
         object-fit: cover;
-        margin-bottom: 0.5rem;
+        margin-bottom: $header-margin-bottom;
     }
 }

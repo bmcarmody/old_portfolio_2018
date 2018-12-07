@@ -1,8 +1,6 @@
 .icon {
     margin-top: $icon-margin;
     margin-bottom: $icon-margin;
-    //width: fit-content;
-    //text-align: center;
 
     i {
         font-size: $icon-size !important;
@@ -11,7 +9,7 @@
 
     img {
         width: $icon-size !important;
-        margin-bottom: 5px;
+        margin-bottom: $icon-margin-bottom;
     }
 
     &__name {
@@ -22,19 +20,19 @@
         padding-right: $icon-name-padding;
         padding-left: $icon-name-padding;
 
-        &--front {
+        &--green {
             background-color: $color-green;
-            border-radius: .2rem;
+            border-radius: $icon-border-radius;
         }
 
-        &--back {
+        &--orange {
             background-color: $color-orange;
-            border-radius: .2rem;
+            border-radius: $icon-border-radius;
         }
 
-        &--tools {
+        &--purple {
             background-color: $color-purple;
-            border-radius: .2rem;
+            border-radius: $icon-border-radius;
         }
     }
 }

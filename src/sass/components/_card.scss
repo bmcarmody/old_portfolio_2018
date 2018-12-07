@@ -1,21 +1,21 @@
-.skill {
+.show {
     &__card {
-        padding: 0px;
+        padding: $card-padding;
 
         &__header {
-            padding-top: 1rem;
+            padding-top: $card-padding-top;
             text-align: center;
-            font-size: 2rem;
+            font-size: $card-font-size;
         
-            &--front {
+            &--green{
                 border-bottom: 3px solid $color-green;
             }
 
-            &--back {
+            &--orange {
                 border-bottom: 3px solid $color-orange;
             }
 
-            &--tools {
+            &--purple {
                 border-bottom: 3px solid $color-purple;
             }
         }

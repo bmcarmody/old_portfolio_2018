@@ -1,22 +1,18 @@
-// //abstracts
+//abstracts
 @import "abstracts/variables";
-// @import "abstracts/mixins";
-// @import "abstracts/utilities";
 
-// //base
-// @import "base/reset";
+//base
 @import "base/typography";
 
-// //components
+//components
 @import "components/icon";
 @import "components/card";
 
-// //layout
-// @import "layout/grid";
+// layout
 @import "layout/header";
 @import "layout/navigation";
 
-// //pages
-@import "pages/home";
+//pages
+@import "pages/main";
 
 @import "./vendor/bootstrap-4.1.3/scss/bootstrap.scss";

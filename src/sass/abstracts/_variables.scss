@@ -1,25 +1,81 @@
-//COLORS
+/***************/ 
+/*   GLOBAL    */
+/***************/
+
+// COLORS
 $color-white: #fff;
 $color-light-grey: #eee;
 $color-light-grey2: #bbb;
 $color-dark-grey: #445;
-$color-light-blue: #AEE;
 $color-green: rgba(0, 155, 114, 0.749);
 $color-orange: rgba(242, 100, 48, 0.749);
 $color-purple: rgba(103, 97, 168, 0.749);
 
-//FONT
+// FONT
 $default-font-size: 1.6rem;
 
-$navigation-font-size: 1.5rem;
-$navigation-height: 5rem;
-$navigation-link-rspacing: 7rem;
-$navigation-tpadding: 1.5rem;
+/***************/ 
+/*    ICON     */
+/***************/
 
-$icon-margin: 1rem;
+// FONT
 $icon-size: 2rem;
-$icon-name-padding: 2px;
 $icon-font-size: .9rem;
 
+// SPACING
+$icon-margin: 1rem;
+$icon-margin-bottom: 5px;
+$icon-name-padding: 2px;
+$icon-border-radius: .2rem;
+
+
+/***************/ 
+/*    CARD     */
+/***************/
+
+// FONT
+$card-font-size: 2rem;
+
+// SPACING
+$card-padding: 0px;
+$card-padding-top: 1rem;
+
+/***************/ 
+/*    HEADER   */
+/***************/
+
+// SPACING
+$header-margin-bottom: 0.5rem;
+
+// SIZING
 $header-height: 17.5rem;
-$photo-dimension: 9rem;
+$header-photo-dimension: 9rem;
+$header-border-radius: 50%;
+
+/***************/ 
+/* NAVIGATION  */
+/***************/
+
+// COLORS
+$nav-text-color: rgb(228, 217, 217) !important;
+$nav-hover-color: rgb(121, 121, 121) !important;
+
+
+
+/***************/ 
+/*    MAIN     */
+/***************/
+
+// COLORS
+$main-color-backgound: rgba(246,247,235, .7);
+$main-color-hr: #666;
+
+// SPACING
+$main-border-radius: .7rem;
+$main-padding: 1rem;
+
+
+//FONT
+
+
+

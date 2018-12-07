@@ -6,9 +6,23 @@
             color: $nav-text-color;
             text-decoration: none !important;
             width: fit-content;
-    
-            &:hover {
-                color: $nav-hover-color;
+
+            &--green {
+                &:hover {
+                    color: $color-green !important;
+                }
+            }
+
+            &--orange {
+                &:hover {
+                    color: $color-orange !important;
+                }
+            }
+
+            &--purple {
+                &:hover {
+                    color: $color-purple !important;
+                }
             }
         }
     }

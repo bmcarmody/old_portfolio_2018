@@ -137,11 +137,11 @@ h1, .show__card__header {
 
 .nav__small__button {
   background-color: rgba(246, 247, 235, 0.6);
-  height: 5rem;
-  width: 5rem;
+  height: 2.5rem;
+  width: 2.5rem;
   position: fixed;
-  top: 3rem;
-  right: 3rem;
+  top: 1rem;
+  right: 1rem;
   border-radius: 50%;
   z-index: 2000;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
@@ -149,12 +149,12 @@ h1, .show__card__header {
   cursor: pointer; }
 
 .nav__small__background {
-  height: 5rem;
-  width: 5rem;
+  height: 2.5rem;
+  width: 2.5rem;
   border-radius: 50%;
   position: fixed;
-  top: 3rem;
-  right: 3rem;
+  top: 1rem;
+  right: 1rem;
   background-image: radial-gradient(rgba(246, 247, 235, 0.6), #f6f7eb);
   z-index: 10;
   transition: transform 0.6s cubic-bezier(0.86, 0, 0.07, 1); }
@@ -169,9 +169,9 @@ h1, .show__card__header {
 
 .nav__small__icon {
   position: relative;
-  margin-top: 2.5rem; }
+  margin-top: 1.2rem; }
   .nav__small__icon, .nav__small__icon::before, .nav__small__icon::after {
-    width: 3rem;
+    width: 1rem;
     height: 2px;
     background-color: #bbb;
     display: inline-block; }
@@ -181,15 +181,15 @@ h1, .show__card__header {
     left: 0;
     transition: all .2s; }
   .nav__small__icon::before {
-    top: -.8rem; }
+    top: -.4rem; }
   .nav__small__icon::after {
-    top: .8rem; }
+    top: .4rem; }
 
 .nav__small__button:hover .nav__small__icon::before {
-  top: -1rem; }
+  top: -.5rem; }
 
 .nav__small__button:hover .nav__small__icon::after {
-  top: 1rem; }
+  top: .5rem; }
 
 .nav__small__checkbox:checked + .nav__small__button .nav__small__icon {
   background: transparent; }

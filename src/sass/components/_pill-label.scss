@@ -1,0 +1,33 @@
+.pill {
+    width: fit-content;
+    padding-right: $pill-name-padding;
+    padding-left: $pill-name-padding;
+    
+
+    &__skill {
+        font-size: $pill-skill-font-size;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__project {
+        font-size: $pill-project-font-size;
+        margin: 2px;
+    }
+    
+
+    &--green {
+        background-color: $color-green;
+        border-radius: $pill-border-radius;
+    }
+
+    &--orange {
+        background-color: $color-orange;
+        border-radius: $pill-border-radius;
+    }
+
+    &--purple {
+        background-color: $color-purple;
+        border-radius: $pill-border-radius;
+    }
+}

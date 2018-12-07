@@ -11,28 +11,4 @@
         width: $icon-size !important;
         margin-bottom: $icon-margin-bottom;
     }
-
-    &__name {
-        width: fit-content;
-        font-size: $icon-font-size;
-        margin-left: auto;
-        margin-right: auto;
-        padding-right: $icon-name-padding;
-        padding-left: $icon-name-padding;
-
-        &--green {
-            background-color: $color-green;
-            border-radius: $icon-border-radius;
-        }
-
-        &--orange {
-            background-color: $color-orange;
-            border-radius: $icon-border-radius;
-        }
-
-        &--purple {
-            background-color: $color-purple;
-            border-radius: $icon-border-radius;
-        }
-    }
 }

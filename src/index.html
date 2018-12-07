@@ -16,11 +16,31 @@
             <!-- TODO - Adds social media plugs-->
         </header>
     
-        <nav class="nav row text-center">
-            <a class="nav__link col-3" href="#about">ABOUT</a>
-            <a class="nav__link col-3" href="#skills">SKILLS</a>
-            <a class="nav__link col-3" href="#projects">PROJECTS</a>
-            <a class="nav__link col-3" href="#contact">CONTACT</a>
+        <nav class="nav">
+            <div class="nav__items row text-center d-none d-lg-flex">
+                <a class="nav__items__link col-3" href="#about">ABOUT</a>
+                <a class="nav__items__link col-3" href="#skills">SKILLS</a>
+                <a class="nav__items__link col-3" href="#projects">PROJECTS</a>
+                <a class="nav__items__link col-3" href="#contact">CONTACT</a>
+            </div>
+
+            <div class="nav__small d-block d-lg-none">
+                <input type="checkbox" class="nav__small__checkbox" id="nav__small__toggle">
+                <label for="nav__small__toggle" class="nav__small__button">
+                    <span class="nav__small__icon"></span>
+                </label>
+
+                <div class="nav__small__background"></div>
+
+                <div class="nav__small__menu">
+                    <ul class="nav__small__menu__list">
+                        <a class="nav__small__menu__list__item" href="#about">ABOUT</a>
+                        <a class="nav__small__menu__list__item" href="#skills">SKILLS</a>
+                        <a class="nav__small__menu__list__item" href="#projects">PROJECTS</a>
+                        <a class="nav__small__menu__list__item" href="#contact">CONTACT</a>
+                    </ul>
+                </div>
+            </div>
         </nav>
 
         <main class="main"> 
@@ -56,27 +76,27 @@
                             <div class="row no-gutters text-center">
                                 <div class="col-xl-3 col-4 icon">
                                     <i class="devicon-html5-plain colored"></i>
-                                    <div class="icon__name icon__name--green">HTML</div>
+                                    <div class="pill pill__skill pill--green">HTML</div>
                                 </div>    
                                 <div class="col-xl-3 col-4 icon">
                                     <i class="devicon-css3-plain colored"></i>
-                                    <div class="icon__name icon__name--green">CSS</div>
+                                    <div class="pill pill__skill pill--green">CSS</div>
                                 </div>
                                 <div class="col-xl-3 col-4 icon">
                                     <i class="devicon-javascript-plain colored"></i>
-                                    <div class="icon__name icon__name--green">JS</div>
+                                    <div class="pill pill__skill pill--green">JS</div>
                                 </div>
                                 <div class="col-xl-3 col-4 icon">
                                     <i class="devicon-react-original colored"></i>
-                                    <div class="icon__name icon__name--green">REACT</div>
+                                    <div class="pill pill__skill pill--green">REACT</div>
                                 </div>
                                 <div class="col-xl-3 col-4 icon">
                                     <i class="devicon-sass-original colored"></i>
-                                    <div class="icon__name icon__name--green">SASS</div>
+                                    <div class="pill pill__skill pill--green">SASS</div>
                                 </div>
                                 <div class="col-xl-3 col-4 icon">
                                     <img src="./../icons/icon-handlebars.png" alt="handlebars icon">
-                                    <div class="icon__name icon__name--green">HBS</div>
+                                    <div class="pill pill__skill pill--green">HBS</div>
                                 </div>
                             </div>
                         </div>
@@ -88,23 +108,23 @@
                             <div class="row no-gutters text-center">
                                 <div class="col-xl-3 col-4 icon">
                                     <i class="devicon-nodejs-plain colored"></i>
-                                    <div class="icon__name icon__name--orange">NODE</div>
+                                    <div class="pill pill__skill pill--orange">NODE</div>
                                 </div>    
                                 <div class="col-xl-3 col-4 icon">
                                     <i class="devicon-express-original colored"></i>
-                                    <div class="icon__name icon__name--orange">EXPRESS</div>
+                                    <div class="pill pill__skill pill--orange">EXPRESS</div>
                                 </div>
                                 <div class="col-xl-3 col-4 icon">
                                     <i class="devicon-mongodb-plain colored"></i>
-                                    <div class="icon__name icon__name--orange">MONGO</div>
+                                    <div class="pill pill__skill pill--orange">MONGO</div>
                                 </div>
                                 <div class="col-xl-3 col-4 icon">
                                     <i class="devicon-mocha-plain colored"></i>
-                                    <div class="icon__name icon__name--orange">MOCHA</div>
+                                    <div class="pill pill__skill pill--orange">MOCHA</div>
                                 </div>
                                 <div class="col-xl-3 col-4 icon">
                                         <i class="devicon-mysql-plain colored"></i>
-                                    <div class="icon__name icon__name--orange">MYSQL</div>
+                                    <div class="pill pill__skill pill--orange">MYSQL</div>
                                 </div>
                             </div>
                         </div>
@@ -116,35 +136,35 @@
                             <div class="row no-gutters text-center">
                                 <div class="col-xl-3 col-4 icon">
                                     <i class="devicon-webpack-plain colored"></i>
-                                    <div class="icon__name icon__name--purple">WEBPACK</div>
+                                    <div class="pill pill__skill pill--purple">WEBPACK</div>
                                 </div>    
                                 <div class="col-xl-3 col-4 icon">
                                     <i class="devicon-heroku-original colored"></i>
-                                    <div class="icon__name icon__name--purple">HEROKU</div>
+                                    <div class="pill pill__skill pill--purple">HEROKU</div>
                                 </div>
                                 <div class="col-xl-3 col-4 icon">
                                     <i class="devicon-git-plain colored"></i>
-                                    <div class="icon__name icon__name--purple">GIT</div>
+                                    <div class="pill pill__skill pill--purple">GIT</div>
                                 </div>
                                 <div class="col-xl-3 col-4 icon">
                                     <i class="devicon-github-plain colored"></i>
-                                    <div class="icon__name icon__name--purple">GITHUB</div>
+                                    <div class="pill pill__skill pill--purple">GITHUB</div>
                                 </div>
                                 <div class="col-xl-3 col-4 icon">
                                     <i class="devicon-babel-plain colored"></i>
-                                    <div class="icon__name icon__name--purple">BABEL</div>
+                                    <div class="pill pill__skill pill--purple">BABEL</div>
                                 </div>
                                 <div class="col-xl-3 col-4 icon">
                                     <i class="devicon-trello-plain colored"></i>
-                                    <div class="icon__name icon__name--purple">TRELLO</div>
+                                    <div class="pill pill__skill pill--purple">TRELLO</div>
                                 </div>
                                 <div class="col-xl-3 col-4 icon">
                                     <img src='./../icons/icon-postman.png' title='postman icon'>
-                                    <div class="icon__name icon__name--purple">POSTMAN</div>
+                                    <div class="pill pill__skill pill--purple">POSTMAN</div>
                                 </div>
                                 <div class="col-xl-3 col-4 icon">
                                     <img src='./../icons/icon-robo3t.png' title='robomongo icon'>
-                                    <div class="icon__name icon__name--purple">ROBO-M</div>
+                                    <div class="pill pill__skill pill--purple">ROBO-M</div>
                                 </div>
                             </div>
                         </div>
@@ -161,6 +181,15 @@
                     <div class="col-lg-4 col-sm-12 px-2">
                         <div class="show__card">
                             <h4 class="show__card__header show__card__header--green">This Site</h4>
+                            <div class="d-flex justify-content-start flex-wrap">
+                                <div class="pill pill__project pill--green">HTML</div>
+                                <div class="pill pill__project pill--green">BOOTSTRAP</div>
+                                <div class="pill pill__project pill--green">SASS</div>
+                                <div class="pill pill__project pill--green">JS</div>
+                                <div class="pill pill__project pill--purple">WEBPACK</div>
+                            </div>
+                            <br><br>
+                            <img class="project__picture" src="../img/project-portfolio.png" alt="Picture of my portfolio site">
                             <h6><strong>Description</strong></h6>
                             <p>
                                 This is the website that you're currently on! It showcases my skills,
@@ -171,11 +200,44 @@
                     <div class="col-lg-4 col-sm-12 px-2">
                         <div class="show__card">
                             <h4 class="show__card__header show__card__header--orange">Todo API</h4>
+                            <div class="d-flex justify-content-start flex-wrap">
+                                <div class="pill pill__project pill--orange">NODE</div>
+                                <div class="pill pill__project pill--orange">EXPRESS</div>
+                                <div class="pill pill__project pill--orange">MONGO</div>
+                                <div class="pill pill__project pill--orange">MOCHA</div>
+                                <div class="pill pill__project pill--purple">POSTMAN</div>
+                                <div class="pill pill__project pill--purple">ROBO-M</div>
+                                <div class="pill pill__project pill--purple">HEROKU</div>
+                            </div>
+                            <br>
+                            <img class="project__picture" src="../img/project-todoapi.png" alt="Picture of todoapi">
+                            <h6><strong>Description</strong></h6>
+                            <p>
+                                This is the website that you're currently on! It showcases my skills,
+                                and projects.
+                            </p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-12 px-2">
                         <div class="show__card">
                             <h4 class="show__card__header show__card__header--purple">Chat App</h4>
+                            <div class="d-flex justify-content-start flex-wrap">
+                                    <div class="pill pill__project pill--green">HTML</div>
+                                    <div class="pill pill__project pill--green">CSS</div>
+                                <div class="pill pill__project pill--orange">NODE</div>
+                                <div class="pill pill__project pill--orange">EXPRESS</div>
+                                <div class="pill pill__project pill--orange">SOCKET IO</div>
+                                <div class="pill pill__project pill--orange">MOCHA</div>
+                                <div class="pill pill__project pill--purple">POSTMAN</div>
+                                <div class="pill pill__project pill--purple">HEROKU</div>
+                            </div>
+                            <br>
+                            <img class="project__picture" src="../img/project-chatapp.png" alt="Picture of chat application">
+                            <h6><strong>Description</strong></h6>
+                            <p>
+                                This is the website that you're currently on! It showcases my skills,
+                                and projects.
+                            </p>
                         </div>
                     </div>
                 </div>

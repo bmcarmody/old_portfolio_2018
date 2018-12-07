@@ -4,6 +4,7 @@
 
 // COLORS
 $color-white: #fff;
+$color-black: #000;
 $color-light-grey: #eee;
 $color-light-grey2: #bbb;
 $color-dark-grey: #445;
@@ -20,13 +21,23 @@ $default-font-size: 1.6rem;
 
 // FONT
 $icon-size: 2rem;
-$icon-font-size: .9rem;
 
 // SPACING
 $icon-margin: 1rem;
 $icon-margin-bottom: 5px;
-$icon-name-padding: 2px;
-$icon-border-radius: .2rem;
+
+
+/***************/ 
+/*  PILL LABEL */
+/***************/
+
+// FONT
+$pill-skill-font-size: .9rem;
+$pill-project-font-size: .9rem;
+
+// SPACING
+$pill-name-padding: 2px;
+$pill-border-radius: .2rem;
 
 
 /***************/ 

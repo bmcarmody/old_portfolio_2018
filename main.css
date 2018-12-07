@@ -1,9 +1,30 @@
 @import url(https://fonts.googleapis.com/css?family=Arimo);
 @import url(https://fonts.googleapis.com/css?family=Pacifico);
+/***************/
+/*   GLOBAL    */
+/***************/
+/***************/
+/*    ICON     */
+/***************/
+/***************/
+/*  PILL LABEL */
+/***************/
+/***************/
+/*    CARD     */
+/***************/
+/***************/
+/*    HEADER   */
+/***************/
+/***************/
+/* NAVIGATION  */
+/***************/
+/***************/
+/*    MAIN     */
+/***************/
 body {
   font-family: 'Arimo', sans-serif !important; }
 
-h1, .skill__card__header {
+h1, .show__card__header {
   font-family: 'Pacifico', cursive !important; }
 
 .nav {
@@ -11,7 +32,7 @@ h1, .skill__card__header {
   font-style: normal;
   font-weight: bold; }
 
-.icon__name {
+.pill {
   font-family: proxima-nova, sans-serif;
   font-style: normal;
   font-weight: 600; }
@@ -24,35 +45,40 @@ h1, .skill__card__header {
   .icon img {
     width: 2rem !important;
     margin-bottom: 5px; }
-  .icon__name {
-    width: fit-content;
-    font-size: 0.9rem;
-    margin-left: auto;
-    margin-right: auto;
-    padding-right: 2px;
-    padding-left: 2px; }
-    .icon__name--front {
-      background-color: rgba(0, 155, 114, 0.749);
-      border-radius: .2rem; }
-    .icon__name--back {
-      background-color: rgba(242, 100, 48, 0.749);
-      border-radius: .2rem; }
-    .icon__name--tools {
-      background-color: rgba(103, 97, 168, 0.749);
-      border-radius: .2rem; }
 
-.skill__card {
+.show__card {
   padding: 0px; }
-  .skill__card__header {
+  .show__card__header {
     padding-top: 1rem;
     text-align: center;
     font-size: 2rem; }
-    .skill__card__header--front {
+    .show__card__header--green {
       border-bottom: 3px solid rgba(0, 155, 114, 0.749); }
-    .skill__card__header--back {
+    .show__card__header--orange {
       border-bottom: 3px solid rgba(242, 100, 48, 0.749); }
-    .skill__card__header--tools {
+    .show__card__header--purple {
       border-bottom: 3px solid rgba(103, 97, 168, 0.749); }
+
+.pill {
+  width: fit-content;
+  padding-right: 2px;
+  padding-left: 2px; }
+  .pill__skill {
+    font-size: 0.9rem;
+    margin-left: auto;
+    margin-right: auto; }
+  .pill__project {
+    font-size: 0.9rem;
+    margin: 2px; }
+  .pill--green {
+    background-color: rgba(0, 155, 114, 0.749);
+    border-radius: 0.2rem; }
+  .pill--orange {
+    background-color: rgba(242, 100, 48, 0.749);
+    border-radius: 0.2rem; }
+  .pill--purple {
+    background-color: rgba(103, 97, 168, 0.749);
+    border-radius: 0.2rem; }
 
 .header {
   height: 17.5rem;
@@ -64,24 +90,131 @@ h1, .skill__card__header {
     object-fit: cover;
     margin-bottom: 0.5rem; }
 
-.nav a {
-  margin-right: 7rem;
-  color: #e4d9d9;
-  text-decoration: none; }
+.nav__items {
+  width: 100%; }
+  .nav__items__link {
+    color: #e4d9d9 !important;
+    text-decoration: none !important;
+    width: fit-content; }
+    .nav__items__link:hover {
+      color: #797979 !important; }
+
+.nav__small__checkbox {
+  display: none; }
+
+.nav__small__menu {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1500;
+  opacity: 0;
+  width: 0;
+  pointer-events: none;
+  transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+  .nav__small__menu__list {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    text-align: center; }
+    .nav__small__menu__list__item:link, .nav__small__menu__list__item:visited {
+      display: block;
+      font-size: 3rem;
+      font-weight: 300;
+      padding: 1rem 2rem;
+      color: #000;
+      text-decoration: none;
+      text-transform: uppercase;
+      background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #000 50%);
+      background-size: 230%;
+      transition: all .4s; }
+    .nav__small__menu__list__item:hover {
+      background-position: 100%;
+      color: #fff; }
+
+.nav__small__button {
+  background-color: rgba(246, 247, 235, 0.6);
+  height: 5rem;
+  width: 5rem;
+  position: fixed;
+  top: 3rem;
+  right: 3rem;
+  border-radius: 50%;
+  z-index: 2000;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+  text-align: center;
+  cursor: pointer; }
+
+.nav__small__background {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 3rem;
+  right: 3rem;
+  background-image: radial-gradient(rgba(246, 247, 235, 0.6), #f6f7eb);
+  z-index: 10;
+  transition: transform 0.6s cubic-bezier(0.86, 0, 0.07, 1); }
+
+.nav__small__checkbox:checked ~ .nav__small__background {
+  transform: scale(75); }
+
+.nav__small__checkbox:checked ~ .nav__small__menu {
+  opacity: 1;
+  width: 100%;
+  pointer-events: all; }
+
+.nav__small__icon {
+  position: relative;
+  margin-top: 2.5rem; }
+  .nav__small__icon, .nav__small__icon::before, .nav__small__icon::after {
+    width: 3rem;
+    height: 2px;
+    background-color: #bbb;
+    display: inline-block; }
+  .nav__small__icon::before, .nav__small__icon::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    transition: all .2s; }
+  .nav__small__icon::before {
+    top: -.8rem; }
+  .nav__small__icon::after {
+    top: .8rem; }
+
+.nav__small__button:hover .nav__small__icon::before {
+  top: -1rem; }
+
+.nav__small__button:hover .nav__small__icon::after {
+  top: 1rem; }
+
+.nav__small__checkbox:checked + .nav__small__button .nav__small__icon {
+  background: transparent; }
+
+.nav__small__checkbox:checked + .nav__small__button .nav__small__icon::before {
+  top: 0;
+  transform: rotate(135deg); }
+
+.nav__small__checkbox:checked + .nav__small__button .nav__small__icon::after {
+  top: 0;
+  transform: rotate(-135deg); }
+
+.project__picture {
+  max-width: 100%;
+  max-height: 100%; }
 
 body {
   background-image: url(b0fc28b590787ac1c298513a13b793df.jpg) !important;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center; }
-  body .container-fluid {
-    padding: 0 !important; }
   body .main {
     background-color: rgba(246, 247, 235, 0.7);
-    border-radius: .7rem;
+    border-radius: 0.7rem;
     padding: 1rem; }
-    body .main .skills--header {
-      text-align: center; }
     body .main hr {
       border: none;
       height: 2px;

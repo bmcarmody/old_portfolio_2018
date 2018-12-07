@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <title>Brandon Carmody</title>
 <link href="main.css" rel="stylesheet"></head>
 <body>
@@ -13,6 +14,10 @@
             <img class="header__picture" src="bb27465385bd41de9b3f55a403bb3e09.png" alt="Picture of Brandon Carmody">
             <h3 class="header__name">Brandon Carmody</h3>
             <h4 class="header__title">Fullstack Developer</h4>
+            <div class="row">
+                <a href="https://github.com/bmcarmody/" target="_blank" class="social__icons"><i class="col-6 fa fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/bmcarmody/" target="_blank" class="social__icons"><i class="col-6 fa fa-linkedin-square"></i></a>
+            </div>
             <!-- TODO - Adds social media plugs-->
         </header>
     
@@ -21,7 +26,7 @@
                 <a class="nav__items__link col-3" href="#about">ABOUT</a>
                 <a class="nav__items__link col-3" href="#skills">SKILLS</a>
                 <a class="nav__items__link col-3" href="#projects">PROJECTS</a>
-                <a class="nav__items__link col-3" href="#contact">CONTACT</a>
+                <a class="nav__items__link col-3" href="https://www.linkedin.com/in/bmcarmody/" target="_blank">CONTACT</a>
             </div>
 
             <div class="nav__small d-block d-lg-none">
@@ -37,229 +42,263 @@
                         <a class="nav__small__menu__list__item" href="#about">ABOUT</a>
                         <a class="nav__small__menu__list__item" href="#skills">SKILLS</a>
                         <a class="nav__small__menu__list__item" href="#projects">PROJECTS</a>
-                        <a class="nav__small__menu__list__item" href="#contact">CONTACT</a>
+                        <a class="nav__small__menu__list__item" href="https://www.linkedin.com/in/bmcarmody/" target="_blank">CONTACT</a>
                     </ul>
                 </div>
             </div>
         </nav>
 
-        <main class="main"> 
-            <section class="row about">
-                <div class="col about__content">
-                    <a id="about"></a> <!--Navigation target for section-->
-                    <h1>About Me</h1>
-                    <hr>
-                    <p>
-                        I'm a fullstack developer who is passionate about web technologies, both
-                        front and backend. I can build complex, intrecate applications using the 
-                        best avaliable languages and tools for the job. I'm fluent and like
-                        working with React, Node, and any SQL/NoSQL database but I'm always open to learning 
-                        new and different technologies. I'm currently seeking a full-time position as a 
-                        fullstack web developer that will deal with tasks from all parts of the programming spectrum.
-                        No task is too much for me, I love learning all the intrecacies about web development!
-                        Please, check out my LinkedIn, Github, and all of the projects I've been working hard on.
-                        <br><br>
-                        Thank you for viewing - Brandon Carmody
-                    </p>
-                </div>
-            </section> <!--about-->
-            <br>
-            
-            <section>
-                <a id="skills"></a> <!--Navigation target for section-->
-                <h1>My Skills</h1>
-                <hr>
-                <div class="show row no-gutters">
-                    <div class="col-lg-4 col-sm-12 px-2">
-                        <div class="show__card">
-                            <h4 class="show__card__header show__card__header--green">Frontend</h4>
-                            <div class="row no-gutters text-center">
-                                <div class="col-xl-3 col-4 icon">
-                                    <i class="devicon-html5-plain colored"></i>
-                                    <div class="pill pill__skill pill--green">HTML</div>
-                                </div>    
-                                <div class="col-xl-3 col-4 icon">
-                                    <i class="devicon-css3-plain colored"></i>
-                                    <div class="pill pill__skill pill--green">CSS</div>
-                                </div>
-                                <div class="col-xl-3 col-4 icon">
-                                    <i class="devicon-javascript-plain colored"></i>
-                                    <div class="pill pill__skill pill--green">JS</div>
-                                </div>
-                                <div class="col-xl-3 col-4 icon">
-                                    <i class="devicon-react-original colored"></i>
-                                    <div class="pill pill__skill pill--green">REACT</div>
-                                </div>
-                                <div class="col-xl-3 col-4 icon">
-                                    <i class="devicon-sass-original colored"></i>
-                                    <div class="pill pill__skill pill--green">SASS</div>
-                                </div>
-                                <div class="col-xl-3 col-4 icon">
-                                    <img src="6f2b30d430b1d7da988cef5a3e93931e.png" alt="handlebars icon">
-                                    <div class="pill pill__skill pill--green">HBS</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div class="col-lg-4 col-sm-12 px-2">
-                        <div class="show__card">
-                            <h4 class="show__card__header show__card__header--orange">Backend</h4>
-                            <div class="row no-gutters text-center">
-                                <div class="col-xl-3 col-4 icon">
-                                    <i class="devicon-nodejs-plain colored"></i>
-                                    <div class="pill pill__skill pill--orange">NODE</div>
-                                </div>    
-                                <div class="col-xl-3 col-4 icon">
-                                    <i class="devicon-express-original colored"></i>
-                                    <div class="pill pill__skill pill--orange">EXPRESS</div>
-                                </div>
-                                <div class="col-xl-3 col-4 icon">
-                                    <i class="devicon-mongodb-plain colored"></i>
-                                    <div class="pill pill__skill pill--orange">MONGO</div>
-                                </div>
-                                <div class="col-xl-3 col-4 icon">
-                                    <i class="devicon-mocha-plain colored"></i>
-                                    <div class="pill pill__skill pill--orange">MOCHA</div>
-                                </div>
-                                <div class="col-xl-3 col-4 icon">
-                                        <i class="devicon-mysql-plain colored"></i>
-                                    <div class="pill pill__skill pill--orange">MYSQL</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div class="col-lg-4 col-sm-12 px-2">
-                        <div class="show__card">
-                            <h4 class="show__card__header show__card__header--purple">Tools</h4>
-                            <div class="row no-gutters text-center">
-                                <div class="col-xl-3 col-4 icon">
-                                    <i class="devicon-webpack-plain colored"></i>
-                                    <div class="pill pill__skill pill--purple">WEBPACK</div>
-                                </div>    
-                                <div class="col-xl-3 col-4 icon">
-                                    <i class="devicon-heroku-original colored"></i>
-                                    <div class="pill pill__skill pill--purple">HEROKU</div>
-                                </div>
-                                <div class="col-xl-3 col-4 icon">
-                                    <i class="devicon-git-plain colored"></i>
-                                    <div class="pill pill__skill pill--purple">GIT</div>
-                                </div>
-                                <div class="col-xl-3 col-4 icon">
-                                    <i class="devicon-github-plain colored"></i>
-                                    <div class="pill pill__skill pill--purple">GITHUB</div>
-                                </div>
-                                <div class="col-xl-3 col-4 icon">
-                                    <i class="devicon-babel-plain colored"></i>
-                                    <div class="pill pill__skill pill--purple">BABEL</div>
-                                </div>
-                                <div class="col-xl-3 col-4 icon">
-                                    <i class="devicon-trello-plain colored"></i>
-                                    <div class="pill pill__skill pill--purple">TRELLO</div>
-                                </div>
-                                <div class="col-xl-3 col-4 icon">
-                                    <img src='10a5c241c59fb16c83857ad55bfe1df1.png' title='postman icon'>
-                                    <div class="pill pill__skill pill--purple">POSTMAN</div>
-                                </div>
-                                <div class="col-xl-3 col-4 icon">
-                                    <img src='f3e8816bce49553c6c560dcae6cc9853.png' title='robomongo icon'>
-                                    <div class="pill pill__skill pill--purple">ROBO-M</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <br>
-
-            <section class="projects">
-                <a id="projects"></a> <!--Navigation target for section-->
-                <h1>My Projects</h1>
-                <hr>
-                <div class="show row no-gutters">
-                    <div class="col-lg-4 col-sm-12 px-2">
-                        <div class="show__card">
-                            <h4 class="show__card__header show__card__header--green">This Site</h4>
-                            <div class="d-flex justify-content-start flex-wrap">
-                                <div class="pill pill__project pill--green">HTML</div>
-                                <div class="pill pill__project pill--green">BOOTSTRAP</div>
-                                <div class="pill pill__project pill--green">SASS</div>
-                                <div class="pill pill__project pill--green">JS</div>
-                                <div class="pill pill__project pill--purple">WEBPACK</div>
-                            </div>
+        <div class="content__background">
+            <main class="main"> 
+                <section class="row about">
+                    <div class="col about__content">
+                        <a id="about"></a> <!--Navigation target for section-->
+                        <h1>About Me</h1>
+                        <hr>
+                        <p>
+                            I'm a fullstack developer who is passionate about web technologies, both
+                            front and backend. I can build complex, intrecate applications using the 
+                            best avaliable languages and tools for the job. I'm fluent and like
+                            working with React, Node, and any SQL/NoSQL database but I'm always open to learning 
+                            new and different technologies. I'm currently seeking a full-time position as a 
+                            fullstack web developer that will deal with tasks from all parts of the programming spectrum.
+                            No task is too much for me, I love learning all the intrecacies about web development!
+                            Please, check out my LinkedIn, Github, and all of the projects I've been working hard on.
                             <br><br>
-                            <img class="project__picture" src="deca4ee392a680ad11cc0e1b8fe43637.png" alt="Picture of my portfolio site">
-                            <h6><strong>Description</strong></h6>
-                            <p>
-                                This is the website that you're currently on! It showcases my skills,
-                                and projects.
-                            </p>
-                        </div>
+                            Thank you for viewing!
+                        </p>
                     </div>
-                    <div class="col-lg-4 col-sm-12 px-2">
-                        <div class="show__card">
-                            <h4 class="show__card__header show__card__header--orange">Todo API</h4>
-                            <div class="d-flex justify-content-start flex-wrap">
-                                <div class="pill pill__project pill--orange">NODE</div>
-                                <div class="pill pill__project pill--orange">EXPRESS</div>
-                                <div class="pill pill__project pill--orange">MONGO</div>
-                                <div class="pill pill__project pill--orange">MOCHA</div>
-                                <div class="pill pill__project pill--purple">POSTMAN</div>
-                                <div class="pill pill__project pill--purple">ROBO-M</div>
-                                <div class="pill pill__project pill--purple">HEROKU</div>
+                </section> <!--about-->
+                
+                <section>
+                    <a id="skills"></a> <!--Navigation target for section-->
+                    <h1>My Skills</h1>
+                    <hr>
+                    <div class="show row no-gutters">
+                        <div class="col-lg-4 col-sm-12 px-2">
+                            <div class="show__card">
+                                <h4 class="show__card__header show__card__header--green">Frontend</h4>
+                                <div class="row no-gutters text-center">
+                                    <div class="col-xl-3 col-4 icon">
+                                        <i class="devicon-html5-plain colored"></i>
+                                        <div class="pill pill__skill pill--green">HTML</div>
+                                    </div>    
+                                    <div class="col-xl-3 col-4 icon">
+                                        <i class="devicon-css3-plain colored"></i>
+                                        <div class="pill pill__skill pill--green">CSS</div>
+                                    </div>
+                                    <div class="col-xl-3 col-4 icon">
+                                        <i class="devicon-javascript-plain colored"></i>
+                                        <div class="pill pill__skill pill--green">JS</div>
+                                    </div>
+                                    <div class="col-xl-3 col-4 icon">
+                                        <i class="devicon-react-original colored"></i>
+                                        <div class="pill pill__skill pill--green">REACT</div>
+                                    </div>
+                                    <div class="col-xl-3 col-4 icon">
+                                        <i class="devicon-sass-original colored"></i>
+                                        <div class="pill pill__skill pill--green">SASS</div>
+                                    </div>
+                                    <div class="col-xl-3 col-4 icon">
+                                        <img src="6f2b30d430b1d7da988cef5a3e93931e.png" alt="handlebars icon">
+                                        <div class="pill pill__skill pill--green">HBS</div>
+                                    </div>
+                                </div>
                             </div>
-                            <br>
-                            <img class="project__picture" src="2bbc05183323223a65550fc38f8a6d76.png" alt="Picture of todoapi">
-                            <h6><strong>Description</strong></h6>
-                            <p>
-                                This is the website that you're currently on! It showcases my skills,
-                                and projects.
-                            </p>
+                        </div>
+        
+                        <div class="col-lg-4 col-sm-12 px-2">
+                            <div class="show__card">
+                                <h4 class="show__card__header show__card__header--orange">Backend</h4>
+                                <div class="row no-gutters text-center">
+                                    <div class="col-xl-3 col-4 icon">
+                                        <i class="devicon-nodejs-plain colored"></i>
+                                        <div class="pill pill__skill pill--orange">NODE</div>
+                                    </div>    
+                                    <div class="col-xl-3 col-4 icon">
+                                        <i class="devicon-express-original colored"></i>
+                                        <div class="pill pill__skill pill--orange">EXPRESS</div>
+                                    </div>
+                                    <div class="col-xl-3 col-4 icon">
+                                        <i class="devicon-mongodb-plain colored"></i>
+                                        <div class="pill pill__skill pill--orange">MONGO</div>
+                                    </div>
+                                    <div class="col-xl-3 col-4 icon">
+                                        <i class="devicon-mocha-plain colored"></i>
+                                        <div class="pill pill__skill pill--orange">MOCHA</div>
+                                    </div>
+                                    <div class="col-xl-3 col-4 icon">
+                                            <i class="devicon-mysql-plain colored"></i>
+                                        <div class="pill pill__skill pill--orange">MYSQL</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="col-lg-4 col-sm-12 px-2">
+                            <div class="show__card">
+                                <h4 class="show__card__header show__card__header--purple">Tools</h4>
+                                <div class="row no-gutters text-center">
+                                    <div class="col-xl-3 col-4 icon">
+                                        <i class="devicon-webpack-plain colored"></i>
+                                        <div class="pill pill__skill pill--purple">WEBPACK</div>
+                                    </div>    
+                                    <div class="col-xl-3 col-4 icon">
+                                        <i class="devicon-heroku-original colored"></i>
+                                        <div class="pill pill__skill pill--purple">HEROKU</div>
+                                    </div>
+                                    <div class="col-xl-3 col-4 icon">
+                                        <i class="devicon-git-plain colored"></i>
+                                        <div class="pill pill__skill pill--purple">GIT</div>
+                                    </div>
+                                    <div class="col-xl-3 col-4 icon">
+                                        <i class="devicon-github-plain colored"></i>
+                                        <div class="pill pill__skill pill--purple">GITHUB</div>
+                                    </div>
+                                    <div class="col-xl-3 col-4 icon">
+                                        <i class="devicon-babel-plain colored"></i>
+                                        <div class="pill pill__skill pill--purple">BABEL</div>
+                                    </div>
+                                    <div class="col-xl-3 col-4 icon">
+                                        <i class="devicon-trello-plain colored"></i>
+                                        <div class="pill pill__skill pill--purple">TRELLO</div>
+                                    </div>
+                                    <div class="col-xl-3 col-4 icon">
+                                        <img src='10a5c241c59fb16c83857ad55bfe1df1.png' title='postman icon'>
+                                        <div class="pill pill__skill pill--purple">POSTMAN</div>
+                                    </div>
+                                    <div class="col-xl-3 col-4 icon">
+                                        <img src='f3e8816bce49553c6c560dcae6cc9853.png' title='robomongo icon'>
+                                        <div class="pill pill__skill pill--purple">ROBO-M</div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-12 px-2">
-                        <div class="show__card">
-                            <h4 class="show__card__header show__card__header--purple">Chat App</h4>
-                            <div class="d-flex justify-content-start flex-wrap">
+                </section>
+                <br>
+    
+                <section class="projects">
+                    <a id="projects"></a> <!--Navigation target for section-->
+                    <h1>My Projects</h1>
+                    <hr>
+                    <div class="show row no-gutters">
+                        <div class="col-lg-4 col-sm-12 px-2">
+                            <div class="show__card">
+                                <h4 class="show__card__header show__card__header--green">This Site</h4>
+                                
+                                <img class="project__picture" src="deca4ee392a680ad11cc0e1b8fe43637.png" alt="Picture of my portfolio site">
+                                
+                                <div class="pill__container d-flex justify-content-start flex-wrap">
+                                    <div class="pill pill__project pill--green">HTML</div>
+                                    <div class="pill pill__project pill--green">BOOTSTRAP</div>
+                                    <div class="pill pill__project pill--green">SASS</div>
+                                    <div class="pill pill__project pill--green">JS</div>
+                                    <div class="pill pill__project pill--purple">WEBPACK</div>
+                                </div>
+                                <h6><strong>Github</strong></h6>
+                                <a href="https://github.com/bmcarmody/portfolio" class="website__link website__link--green" target="_blank">https://github.com/bmcarmody/portfolio</a>
+                                <h6><strong>Description</strong></h6>
+                                <p>
+                                    This is the website that you're currently on! It showcases my skills,
+                                    and projects.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-12 px-2">
+                            <div class="show__card">
+                                <h4 class="show__card__header show__card__header--orange">Todo API</h4>
+                                
+                                <img class="project__picture" src="2bbc05183323223a65550fc38f8a6d76.png" alt="Picture of todoapi">
+                                
+                                <div class="pill__container d-flex justify-content-start flex-wrap">
+                                    <div class="pill pill__project pill--orange">NODE</div>
+                                    <div class="pill pill__project pill--orange">EXPRESS</div>
+                                    <div class="pill pill__project pill--orange">JWT</div>
+                                    <div class="pill pill__project pill--orange">MONGO</div>
+                                    <div class="pill pill__project pill--orange">MOCHA</div>
+                                    <div class="pill pill__project pill--purple">POSTMAN</div>
+                                    <div class="pill pill__project pill--purple">ROBO-M</div>
+                                    <div class="pill pill__project pill--purple">HEROKU</div>
+                                </div>
+    
+                                <h6><strong>Github</strong></h6>
+                                <a href="https://github.com/bmcarmody/todo-api" class="website__link website__link--orange" target="_blank">https://github.com/bmcarmody/todo-api</a>
+                                <h6><strong>Description</strong></h6>
+                                <p>
+                                    An API to create Todo lists. Using HTTP requests, users can signup to make various todo items, 
+                                    get them by id, delete, edit them. Due to JWT, only users who created their owns 
+                                    posts can have access to them. All data is stored within MongoDB.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-12 px-2">
+                            <div class="show__card">
+                                <h4 class="show__card__header show__card__header--purple">Chat App</h4>
+                                
+                                <img class="project__picture" src="72fa86950d0652865914e26c3a83ace8.png" alt="Picture of chat application">
+    
+                                <div class="pill__container d-flex justify-content-start flex-wrap">
                                     <div class="pill pill__project pill--green">HTML</div>
                                     <div class="pill pill__project pill--green">CSS</div>
-                                <div class="pill pill__project pill--orange">NODE</div>
-                                <div class="pill pill__project pill--orange">EXPRESS</div>
-                                <div class="pill pill__project pill--orange">SOCKET IO</div>
-                                <div class="pill pill__project pill--orange">MOCHA</div>
-                                <div class="pill pill__project pill--purple">POSTMAN</div>
-                                <div class="pill pill__project pill--purple">HEROKU</div>
+                                    <div class="pill pill__project pill--orange">NODE</div>
+                                    <div class="pill pill__project pill--orange">EXPRESS</div>
+                                    <div class="pill pill__project pill--orange">SOCKET IO</div>
+                                    <div class="pill pill__project pill--orange">MOCHA</div>
+                                    <div class="pill pill__project pill--purple">POSTMAN</div>
+                                    <div class="pill pill__project pill--purple">HEROKU</div>
+                                </div>
+                                <h6><strong>Website</strong></h6>
+                                <a href="https://floating-taiga-14329.herokuapp.com/"class="website__link website__link--purple" target="_blank">https://floating-taiga-14329.herokuapp.com/</a>
+    
+                                <br>
+                                <h6><strong>Github</strong></h6>
+                                <a href="https://github.com/bmcarmody/chat-app" class="website__link website__link--purple" target="_blank">https://github.com/bmcarmody/chat-app</a>
+                                <h6><strong>Description</strong></h6>
+                                <p>
+                                    A chat app created with Node, Socket.IO and Express. Users can create
+                                    a user name and then join a chat room. Users in the same chat room can
+                                    communicate with each other in real time. 
+                                </p>
                             </div>
-                            <br>
-                            <img class="project__picture" src="72fa86950d0652865914e26c3a83ace8.png" alt="Picture of chat application">
-                            <h6><strong>Description</strong></h6>
-                            <p>
-                                This is the website that you're currently on! It showcases my skills,
-                                and projects.
-                            </p>
                         </div>
                     </div>
+                </section> <!--projects -->
+            </main>
+    
+            <footer>
+                <hr>
+                <div class="row">
+                    <div class="sections col-4">
+                        <h6>Sections</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                        </ul>
+                    </div>
+                    <div class="projects col-4">
+                        <h6>Projects</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="https://github.com/bmcarmody/portfolio" target="_blank">Portfolio Github</a></li>
+                            <li><a href="https://github.com/bmcarmody/todo-api" target="_blank">Todo API Github</a></li>
+                            <li><a href="https://floating-taiga-14329.herokuapp.com/" target="_blank">Chat App</a></li>
+                            <li><a href="https://github.com/bmcarmody/chat-app" target="_blank">Chat App Github</a></li>
+                        </ul>
+                    </div>
+                    <div class="profiles col-4">
+                        <h6>Profiles</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="https://github.com/bmcarmody/" target="_blank">Github</a></li>
+                            <li><a href="https://www.linkedin.com/in/bmcarmody/" target="_blank">LinkedIn</a></li>
+                        </ul>
+                    </div>
                 </div>
-            </section> <!--projects-->
-            <br>
-
-            <section class="contact">
-                <div class="contact__content">
-                    <a id="contact"></a> <!--Navigation target for section-->
-                    <h1>Contact</h1>
-                    <hr>
-                    <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam velit recusandae necessitatibus libero maiores deserunt explicabo harum, quas accusamus. Voluptas, reprehenderit. Veniam veritatis, ipsam dicta tenetur repudiandae cupiditate minima amet.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse ipsa molestias assumenda qui ullam quos iure sequi eum amet necessitatibus aperiam veritatis obcaecati, fuga ab molestiae maxime. Labore, expedita aliquid.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur corporis asperiores ex iste, natus ducimus dolorem obcaecati maxime harum, officia dolore tempora architecto saepe consequuntur, commodi maiores vel culpa autem?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam harum porro voluptate asperiores, mollitia nostrum, deleniti cum saepe dignissimos commodi ratione illo nesciunt rerum temporibus. Tenetur libero labore dolorem. Corporis.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi laudantium excepturi placeat blanditiis facere, quaerat exercitationem? Cumque unde ipsam velit odio. Aspernatur iusto atque minus fugit a labore voluptatem qui?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis animi aliquam nobis deserunt modi odio aliquid at in, reiciendis fuga. Sunt ipsam error saepe dolorum at aliquid dignissimos ex qui?
-                    </p>
-                </div> <!--contact__content-->
-            </section> <!--contact-->
-        </main>
+                <div class="row">
+                    <div class="col-12 text-center">Copyright &copy; 2018 Brandon Carmody. All Rights Reserved </div>
+                </div>
+            </footer>
+        </div>
     </div>
 <script type="text/javascript" src="js/main.bundle.js"></script></body>
 </html>

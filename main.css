@@ -63,6 +63,8 @@ h1, .show__card__header {
   width: fit-content;
   padding-right: 2px;
   padding-left: 2px; }
+  .pill__container {
+    margin-top: .5rem; }
   .pill__skill {
     font-size: 0.9rem;
     margin-left: auto;
@@ -89,6 +91,15 @@ h1, .show__card__header {
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 0.5rem; }
+  .header i {
+    font-size: 1.5rem; }
+  .header .fa-github:hover {
+    color: rgba(0, 155, 114, 0.749); }
+  .header .fa-linkedin-square:hover {
+    color: #4875B4; }
+  .header .social__icons {
+    color: #fff;
+    text-decoration: none; }
 
 .nav__items {
   width: 100%; }
@@ -174,7 +185,7 @@ h1, .show__card__header {
   .nav__small__icon, .nav__small__icon::before, .nav__small__icon::after {
     width: 2rem;
     height: 2px;
-    background-color: #bbb;
+    background-color: #797979;
     display: inline-block; }
   .nav__small__icon::before, .nav__small__icon::after {
     content: "";
@@ -207,20 +218,62 @@ h1, .show__card__header {
   max-width: 100%;
   max-height: 100%; }
 
+footer hr {
+  border: none;
+  height: 2px;
+  color: #797979;
+  background-color: #797979; }
+
+footer h6 {
+  text-align: center;
+  font-weight: bold; }
+
+footer ul {
+  text-align: center; }
+  footer ul a {
+    text-decoration: none;
+    color: #000; }
+    footer ul a:hover {
+      text-decoration: none;
+      font-weight: bold; }
+
+footer .sections a:hover {
+  color: rgba(0, 155, 114, 0.749); }
+
+footer .projects a:hover {
+  color: rgba(242, 100, 48, 0.749); }
+
+footer .profiles a:hover {
+  color: rgba(103, 97, 168, 0.749); }
+
 body {
   background-image: url(b0fc28b590787ac1c298513a13b793df.jpg) !important;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center; }
-  body .main {
+  body .content__background {
     background-color: rgba(246, 247, 235, 0.7);
     border-radius: 0.7rem;
-    padding: 1rem; }
-    body .main hr {
-      border: none;
-      height: 2px;
-      color: #666;
-      background-color: #666; }
+    padding: 1rem;
+    margin-bottom: 3rem; }
+  body .main hr {
+    border: none;
+    height: 2px;
+    color: #666;
+    background-color: #666; }
+  body .main h6 {
+    margin-top: 1rem; }
+  body .main .website__link {
+    color: #000;
+    text-decoration: none; }
+    body .main .website__link:hover {
+      font-weight: bold; }
+    body .main .website__link--green:hover {
+      color: rgba(0, 155, 114, 0.749); }
+    body .main .website__link--orange:hover {
+      color: rgba(242, 100, 48, 0.749); }
+    body .main .website__link--purple:hover {
+      color: rgba(103, 97, 168, 0.749); }
 
 /*!
  * Bootstrap v4.1.3 (https://getbootstrap.com/)

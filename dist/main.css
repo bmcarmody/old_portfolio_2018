@@ -107,8 +107,12 @@ h1, .show__card__header {
     color: #e4d9d9 !important;
     text-decoration: none !important;
     width: fit-content; }
-    .nav__items__link:hover {
-      color: #797979 !important; }
+    .nav__items__link--green:hover {
+      color: rgba(0, 155, 114, 0.749) !important; }
+    .nav__items__link--orange:hover {
+      color: rgba(242, 100, 48, 0.749) !important; }
+    .nav__items__link--purple:hover {
+      color: rgba(103, 97, 168, 0.749) !important; }
 
 .nav__small__checkbox {
   display: none; }
